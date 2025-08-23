@@ -7,7 +7,7 @@ export const projects: Project[] = [
     description: "• Traditional research assistants lack contextual understanding and fail to provide accurate, up-to-date information from multiple sources with proper citation and verification\n\n• Developed intelligent research assistant integrating Google Gemini 1.5 Flash API with RAG, building custom vector database using scikit-learn's NearestNeighbors, implementing newspaper3k for article extraction, and engineering end-to-end workflow with multi-model NLP processing (BART, BERT, DistilBERT) for contextually-grounded responses.",
     image: "/images/projects/Rag.png",
     technologies: ["Python", "Google Gemini API", "BART", "BERT", "DistilBERT", "RAG", "NLP", "newspaper3k", "scikit-learn", "Vector Database"],
-    githubUrl: "https://github.com/yourusername/ai-research-assistant",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Generative AI",
     detailedDescription: "Developed an intelligent research assistant integrating Google Gemini 1.5 Flash API with retrieval-augmented generation, combining web search capabilities with contextual document processing. Built custom data processing pipeline integrating newspaper3k for article extraction, serper.dev for search results, with custom error handling, rate limiting, and multi-model NLP processing (BART, BERT, DistilBERT). Implemented custom vector database solution from scratch using scikit-learn's NearestNeighbors and numpy arrays for in-memory semantic similarity search and document retrieval. Engineered end-to-end RAG workflow orchestrating pre-trained transformer models for embedding generation, custom retrieval logic, and dynamic prompt construction for contextually-grounded responses. Designed modular architecture with asynchronous processing, session management, and multi-model integration for summarization, named entity recognition, and sentiment analysis."
   },
@@ -17,7 +17,7 @@ export const projects: Project[] = [
     description: "Comprehensive compliance analytics solution with multi-source data extraction and cost optimization for enterprise software management.",
     image: "/images/projects/SC.webp",
     technologies: ["SQL", "Power BI", "Excel", "Python", "Data Analysis", "Cost Optimization"],
-    githubUrl: "https://github.com/yourusername/license-compliance-system",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Data Analysis",
     detailedDescription: "Built a comprehensive software license compliance and cost optimization system for enterprise environments. The solution analyzes software usage patterns, identifies compliance risks, and provides actionable insights for cost reduction."
   },
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     description: "• Minor, imperceptible perturbations to input images can fool state-of-the-art deep learning models into making incorrect predictions, highlighting critical security vulnerabilities in AI systems\n\n• Implemented ensemble-based adversarial attacks using Iterative Fast Gradient Sign Method (I-FGSM) with gradient aggregation across multiple pre-trained models, achieving 85% attack success rate while maintaining visual imperceptibility.",
     image: "/images/projects/Adversarial.png",
     technologies: ["Python", "PyTorch", "TensorFlow", "CIFAR-10", "Adversarial ML", "Computer Vision"],
-    githubUrl: "https://github.com/yourusername/adversarial-attacks",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "ML Modeling",
     detailedDescription: "Implemented ensemble-based adversarial attacks using Iterative Fast Gradient Sign Method (I-FGSM) with gradient aggregation across multiple pre-trained models, achieving 85% attack success rate while maintaining visual imperceptibility."
   },
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     description: "• Traditional question answering systems struggle to understand contextual relationships and accurately extract answer spans from given passages\n\n• Fine-tuned BERT model with custom loss functions for start/end position prediction, implementing dynamic learning rate scheduling and gradient accumulation techniques for improved span extraction accuracy.",
     image: "/images/projects/bert.png",
     technologies: ["Python", "BERT", "Transformers", "PyTorch", "NLP", "Question Answering"],
-    githubUrl: "https://github.com/yourusername/bert-reading-comprehension",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Generative AI"
   },
   {
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     description: "• Learning complex sequential decision-making under uncertainty where an agent must balance multiple competing objectives including safe landing, fuel efficiency, and trajectory optimization in continuous action spaces\n\n• Implemented Actor-Critic architecture with policy gradient methods, custom reward shaping, and experience replay mechanisms achieving consistent successful landings with scores above 200 points.",
     image: "/images/projects/lunarlander.png",
     technologies: ["Python", "PyTorch", "OpenAI Gym", "Reinforcement Learning", "Actor-Critic"],
-    githubUrl: "https://github.com/yourusername/lunar-lander-rl",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "ML Modeling"
   },
   {
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     description: "• Traditional time series models fail to capture complex inter-asset relationships and network effects that significantly influence financial market dynamics\n\n• Implemented Graph Attention Networks (GAT) to model both spatial relationships between assets and temporal dependencies, achieving superior prediction accuracy through ensemble strategies and multi-head attention mechanisms.",
     image: "/images/projects/deep_learning.png",
     technologies: ["Python", "PyTorch", "Graph Neural Networks", "GAT", "Financial ML"],
-    githubUrl: "https://github.com/yourusername/gnn-financial-prediction",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "ML Modeling"
   },
   {
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     description: "• Traditional RNN-based approaches struggle to capture long-range dependencies in audio sequences and fail to effectively classify speakers from variable-length MFCC features across 600 different speakers\n\n• Implemented transformer encoder architecture with custom positional encoding for audio data, achieving superior accuracy through multi-head self-attention mechanisms and mixed precision training.",
     image: "/images/projects/Transformer-Based Speaker Classification.png",
     technologies: ["Python", "PyTorch", "Transformers", "Audio Processing", "MFCC"],
-    githubUrl: "https://github.com/yourusername/speaker-classification",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "ML Modeling"
   },
   {
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     description: "• Traditional wireless localization methods require extensive labeled data and fail to extract meaningful representations from complex channel state information for accurate 3D position prediction\n\n• Implemented two-stage self-supervised approach using autoencoder for feature extraction followed by position prediction model, leveraging unlabeled channel data to achieve accurate localization with limited labeled samples.",
     image: "/images/projects/Self-Supervised Learning for User Localization.jpg",
     technologies: ["Python", "PyTorch", "Self-Supervised Learning", "Autoencoders", "Wireless ML"],
-    githubUrl: "https://github.com/yourusername/user-localization",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "ML Modeling"
   },
   {
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     description: "• Traditional RNN-based translation systems struggle with long-range dependencies, parallel processing limitations, and maintaining contextual accuracy across variable-length sequences in English to Traditional Chinese translation\n\n• Implemented transformer encoder-decoder architecture with SentencePiece tokenization, custom beam search decoding, and label smoothing regularization achieving superior translation quality and reduced training time.",
     image: "/images/projects/bert.png",
     technologies: ["Python", "PyTorch", "Transformers", "SentencePiece", "NMT"],
-    githubUrl: "https://github.com/yourusername/neural-translation",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Generative AI"
   },
   {
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     description: "• Traditional machine learning approaches fail to capture complex non-linear relationships in acoustic feature space and struggle with inherent variability in speech patterns across different speakers and contexts for phoneme classification\n\n• Implemented multi-layer neural network with context window concatenation, batch normalization, and advanced data augmentation techniques achieving substantial accuracy improvements over baseline methods.",
     image: "/images/projects/Deep Neural Networks for Speech Classification.webp",
     technologies: ["Python", "PyTorch", "Speech Processing", "MFCC", "Phoneme Classification"],
-    githubUrl: "https://github.com/yourusername/speech-classification",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "ML Modeling"
   },
   {
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     description: "• Traditional OCR systems struggle with complex Indic scripts like Telugu due to character variations, ligatures, and contextual dependencies\n\n• Implemented CNN-based OCR framework with comprehensive data preprocessing, custom character segmentation, and multi-scale feature extraction achieving robust recognition accuracy for Telugu script.",
     image: "/images/projects/telugu handwritten recognition.png",
     technologies: ["TensorFlow", "Keras", "CNN", "OpenCV", "OCR"],
-    githubUrl: "https://github.com/yourusername/telugu-ocr",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "ML Modeling"
   },
   {
@@ -109,7 +109,7 @@ export const projects: Project[] = [
     description: "Problem: Traditional image and text recognition systems lack scalability and reliability for high-volume processing with varying workloads. Solution: Built asynchronous recognition pipeline using AWS EC2, SQS, S3, and Rekognition with stateless compute strategies, achieving 99.9% uptime through visibility timeout calibration and retry mechanisms.",
     image: "/images/projects/sqs.png",
     technologies: ["AWS", "Docker", "Kubernetes", "Terraform", "Cloud Computing"],
-    githubUrl: "https://github.com/yourusername/aws-optimization",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Engineering Solutions"
   },
   {
@@ -118,7 +118,7 @@ export const projects: Project[] = [
     description: "Problem: Traditional traffic prediction models fail to capture complex spatiotemporal dependencies and topological interactions between network nodes in urban traffic systems. Solution: Engineered fusion architecture combining ARIMA, LSTM, and GNN models with PCA and t-SNE dimensionality reduction, achieving robust multi-horizon prediction across 325 sensors in the PEMS-BAY dataset.",
     image: "/images/projects/traffic_forecasting.png",
     technologies: ["Python", "ARIMA", "LSTM", "GNN", "PCA", "t-SNE", "Time Series"],
-    githubUrl: "https://github.com/yourusername/time-series-analysis",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Data Analysis"
   },
   {
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     description: "Problem: Traditional banking analytics systems lack real-time processing capabilities and fail to handle high concurrency requirements for fraud detection and transactional analysis. Solution: Developed transactional analytics platform with responsive dashboard, anomaly detection, and time-series mapping, containerized using Docker with CI/CD pipelines for high-availability deployment.",
     image: "/images/projects/database.png",
     technologies: ["Python", "Docker", "CI/CD", "Anomaly Detection", "Time Series", "Financial Analytics"],
-    githubUrl: "https://github.com/yourusername/database-design",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Data Engineering"
   },
   {
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     description: "Problem: Traditional wine quality prediction models lack scalability and fail to handle large-scale datasets efficiently, resulting in slow training times and limited throughput for production inference. Solution: Created Spark-based distributed system on AWS EMR with partitioned data and in-memory caching, achieving 60% training speed improvement and high-throughput inference with autoscaling and performance logging.",
     image: "/images/projects/Parallel.png",
     technologies: ["Apache Spark", "AWS EMR", "ML Pipeline", "Distributed Computing", "Wine Quality Prediction"],
-    githubUrl: "https://github.com/yourusername/parallel-computing",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Engineering Solutions"
   },
   {
@@ -145,7 +145,7 @@ export const projects: Project[] = [
     description: "Problem: Traditional flight data analysis systems struggle with processing large-scale historical datasets and fail to provide scalable insights across multi-year timeframes. Solution: Developed AWS-based MapReduce pipelines orchestrated with Apache Oozie for distributed flight data processing, quantifying performance metrics and scalability across multi-year datasets from 1987 to 2008.",
     image: "/images/projects/flight_data.png",
     technologies: ["AWS", "MapReduce", "Apache Oozie", "Big Data", "Data Analysis", "Scalability Testing"],
-    githubUrl: "https://github.com/yourusername/flight-analytics",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Data Analysis"
   },
   {
@@ -154,7 +154,7 @@ export const projects: Project[] = [
     description: "Problem: Traditional portfolio management approaches lack data-driven decision making and fail to optimize position sizing and risk management for algorithmic trading strategies. Solution: Formulated data-driven equity strategies using Python libraries (Pandas, NumPy, Matplotlib) to optimize a $5M portfolio, deploying quantitative analysis and risk modeling techniques for algorithmic position sizing and performance benchmarking.",
     image: "/images/projects/portfolio.png",
     technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Quantitative Analysis", "Risk Modeling", "Algorithmic Trading"],
-    githubUrl: "https://github.com/yourusername/portfolio-website",
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Engineering Solutions"
   },
 
