@@ -220,6 +220,10 @@
 }
 
 @media (max-width: 768px) {
+  .contact-container {
+    padding: 0 1rem;
+  }
+
   .contact-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -235,12 +239,19 @@
   }
 
   .contact-links {
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
 
   .contact-link {
-    width: 42px;
-    height: 42px;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .contact-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
 
   .contact-item {
@@ -251,5 +262,36 @@
     width: 35px;
     height: 35px;
     font-size: 1.2rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 0 0.75rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .contact-link {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .contact-text {
+    font-size: 0.8rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.85rem;
+    padding: 0.5rem;
   }
 } 

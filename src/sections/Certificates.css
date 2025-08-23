@@ -15,7 +15,9 @@
   margin-bottom: 4rem;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  padding: 1rem 0;
 }
 
 .certificate-card {
@@ -244,14 +246,24 @@
 }
 
 @media (max-width: 768px) {
+  .certificates-container {
+    padding: 0 1rem;
+  }
+
   .certificates-grid {
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 0.5rem 0;
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
   }
 
   .certificate-card {
-    min-width: 250px;
+    min-width: 280px;
+    max-width: 280px;
     margin: 0;
+    flex-shrink: 0;
   }
 
   .certificate-actions {
@@ -286,5 +298,32 @@
     width: 35px;
     height: 35px;
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificates-container {
+    padding: 0 0.75rem;
+  }
+
+  .certificate-card {
+    min-width: 260px;
+    max-width: 260px;
+  }
+
+  .certificate-content {
+    padding: 1rem;
+  }
+
+  .certificate-title {
+    font-size: 1.1rem;
+  }
+
+  .certificate-issuer {
+    font-size: 0.85rem;
+  }
+
+  .certificate-date {
+    font-size: 0.75rem;
   }
 } 
