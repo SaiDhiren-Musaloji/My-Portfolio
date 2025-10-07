@@ -13,10 +13,10 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Software License Compliance Analysis and Cost Optimization System",
-    description: "Comprehensive compliance analytics solution with multi-source data extraction and cost optimization for enterprise software management.",
+    title: "Software License Compliance Analysis - Enterprise Data Analytics",
+    description: "Orchestrated multi-source data integration project across 25 enterprise systems including Snowflake data warehouse, DynamoDB NoSQL clusters, SQL Server databases, and Cassandra distributed systems, implementing robust ETL processes using Apache Airflow to consolidate 500K+ software license records with 99.5% accuracy for regulatory compliance reporting. Spearheaded development of comprehensive compliance analytics platform using Python and SQL, reducing manual audit processing time by 60% and identifying $180K in cost-optimization opportunities through intelligent license allocation strategies. Constructed interactive Power BI dashboards serving 45+ stakeholders with real-time monitoring capabilities for 1,200+ software licenses, implementing automated alert systems for free, enterprise, and client-billed license categories. Executed advanced pattern recognition analysis on 3-year historical licensing data using machine learning algorithms, achieving 94% accuracy in utilization trend prediction and preventing $75K in unnecessary license renewals.",
     image: "/images/projects/SC.webp",
-    technologies: ["SQL", "Power BI", "Excel", "Python", "Data Analysis", "Cost Optimization"],
+    technologies: ["Python", "SQL", "Power BI", "Apache Airflow", "Snowflake", "DynamoDB", "Machine Learning", "Data Analysis", "Cost Optimization", "ETL"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Data Analysis",
     detailedDescription: "Built a comprehensive software license compliance and cost optimization system for enterprise environments. The solution analyzes software usage patterns, identifies compliance risks, and provides actionable insights for cost reduction."
@@ -141,22 +141,31 @@ export const projects: Project[] = [
   },
   {
     id: 16,
-    title: "Flight Data Analysis with Scalability Testing",
-    description: "Problem: Traditional flight data analysis systems struggle with processing large-scale historical datasets and fail to provide scalable insights across multi-year timeframes. Solution: Developed AWS-based MapReduce pipelines orchestrated with Apache Oozie for distributed flight data processing, quantifying performance metrics and scalability across multi-year datasets from 1987 to 2008.",
+    title: "Flight Data Analysis - Big Data Analytics & Performance Optimization",
+    description: "Engineered scalable AWS-based MapReduce data processing pipelines using Apache Spark and Oozie orchestration, analyzing 22-year aviation dataset (1987-2008) containing 120M+ flight records with 40% improved query performance optimization. Implemented comprehensive scalability testing framework across varying data volumes (1GB to 500GB), demonstrating linear performance scalability and optimizing AWS resource allocation to reduce processing costs by 35%. Established high-performance aviation analytics platform supporting 15 concurrent users with sub-3-second query response times, delivering actionable insights on 5,000+ flight routes for executive decision-making processes.",
     image: "/images/projects/flight_data.png",
-    technologies: ["AWS", "MapReduce", "Apache Oozie", "Big Data", "Data Analysis", "Scalability Testing"],
+    technologies: ["AWS", "Apache Spark", "MapReduce", "Apache Oozie", "Big Data", "Data Analysis", "Scalability Testing", "Performance Optimization"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Data Analysis"
   },
   {
     id: 17,
-    title: "Equity Portfolio Management",
-    description: "Problem: Traditional portfolio management approaches lack data-driven decision making and fail to optimize position sizing and risk management for algorithmic trading strategies. Solution: Formulated data-driven equity strategies using Python libraries (Pandas, NumPy, Matplotlib) to optimize a $5M portfolio, deploying quantitative analysis and risk modeling techniques for algorithmic position sizing and performance benchmarking.",
+    title: "Equity Portfolio Management - Financial Analytics & Quantitative Analysis",
+    description: "Orchestrated comprehensive portfolio optimization analysis using Python (Pandas, NumPy, Matplotlib) to evaluate $5M equity portfolio, implementing advanced risk-return modeling that generated 18% annual return improvement over S&P 500 benchmark. Directed quantitative analysis team of 3 members in developing algorithmic position sizing strategies, utilizing simulations across 500+ securities to reduce portfolio volatility by 23% while maintaining 12.4% target return threshold. Architected automated performance tracking system monitoring 15 key performance indicators (KPIs) daily, enabling real-time investment decisions that improved Sharpe ratio from 1.2 to 1.8 over 12-month analytical period.",
     image: "/images/projects/portfolio.png",
-    technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Quantitative Analysis", "Risk Modeling", "Algorithmic Trading"],
+    technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Quantitative Analysis", "Risk Modeling", "Algorithmic Trading", "Portfolio Optimization", "Sharpe Ratio"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Engineering Solutions"
   },
+  {
+    id: 18,
+    title: "Banking Transaction Management System - Agile Full-Stack RDBMS Development & Analytics",
+    description: "Engineered enterprise-grade relational database management system integrating MySQL primary databases with Snowflake data warehouse and DynamoDB document storage for banking network infrastructure, designing normalized schema with 15+ tables to handle 10,000+ daily transactions with 99.9% data integrity and sub-200ms query response times. Developed user-centric web interface using Flask and REST APIs to support comprehensive transaction processing workflows, implementing real-time balance updates and transaction history tracking for 500+ concurrent users based on stakeholder requirements. Implemented agile development methodology across 2-sprint delivery cycle, conducting user story analysis and stakeholder requirement gathering to deliver full-stack banking solution with transaction management, user authentication, and reporting capabilities.",
+    image: "/images/projects/database.png",
+    technologies: ["MySQL", "Snowflake", "DynamoDB", "Flask", "REST APIs", "Python", "Agile Development", "Database Design", "Web Interface", "Transaction Management"],
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
+    category: "Data Engineering"
+  }
 
 ];
 
@@ -201,49 +210,89 @@ export const certificates: Certificate[] = [
 ];
 
 export const skills: Skill[] = [
-  // Machine Learning
+  // Machine Learning & Deep Learning
   { id: 1, name: "Scikit-learn", category: "machine-learning", proficiency: 88 },
   { id: 2, name: "Pandas", category: "machine-learning", proficiency: 95 },
   { id: 3, name: "NumPy", category: "machine-learning", proficiency: 92 },
-  { id: 4, name: "Power BI", category: "machine-learning", proficiency: 80 },
-  { id: 5, name: "R", category: "machine-learning", proficiency: 70 },
+  { id: 4, name: "Power BI", category: "machine-learning", proficiency: 85 },
+  { id: 5, name: "R", category: "machine-learning", proficiency: 75 },
+  { id: 6, name: "XGBoost", category: "machine-learning", proficiency: 80 },
+  { id: 7, name: "Ensemble Methods", category: "machine-learning", proficiency: 85 },
   
   // Deep Learning
-  { id: 6, name: "TensorFlow", category: "deep-learning", proficiency: 90 },
-  { id: 7, name: "PyTorch", category: "deep-learning", proficiency: 92 },
-  { id: 8, name: "BERT", category: "deep-learning", proficiency: 85 },
-  { id: 9, name: "Transformers", category: "deep-learning", proficiency: 88 },
-  { id: 10, name: "Graph Neural Networks", category: "deep-learning", proficiency: 75 },
-  { id: 11, name: "OpenAI Gym", category: "deep-learning", proficiency: 80 },
+  { id: 8, name: "TensorFlow", category: "deep-learning", proficiency: 90 },
+  { id: 9, name: "Keras", category: "deep-learning", proficiency: 88 },
+  { id: 10, name: "PyTorch", category: "deep-learning", proficiency: 92 },
+  { id: 11, name: "BERT", category: "deep-learning", proficiency: 85 },
+  { id: 12, name: "Transformers", category: "deep-learning", proficiency: 88 },
+  { id: 13, name: "LSTM", category: "deep-learning", proficiency: 85 },
+  { id: 14, name: "CNN", category: "deep-learning", proficiency: 90 },
+  { id: 15, name: "Graph Neural Networks", category: "deep-learning", proficiency: 75 },
+  { id: 16, name: "Reinforcement Learning", category: "deep-learning", proficiency: 80 },
+  { id: 17, name: "GANs", category: "deep-learning", proficiency: 75 },
+  { id: 18, name: "OpenAI Gym", category: "deep-learning", proficiency: 80 },
   
-  // Data Processing
-  { id: 12, name: "SQL", category: "data-processing", proficiency: 90 },
-  { id: 13, name: "PostgreSQL", category: "data-processing", proficiency: 85 },
-  { id: 14, name: "MySQL", category: "data-processing", proficiency: 80 },
-  { id: 15, name: "MATLAB", category: "data-processing", proficiency: 75 },
+  // Data Processing & Analytics
+  { id: 19, name: "SQL", category: "data-processing", proficiency: 90 },
+  { id: 20, name: "PostgreSQL", category: "data-processing", proficiency: 85 },
+  { id: 21, name: "MySQL", category: "data-processing", proficiency: 80 },
+  { id: 22, name: "MongoDB", category: "data-processing", proficiency: 75 },
+  { id: 23, name: "Snowflake", category: "data-processing", proficiency: 80 },
+  { id: 24, name: "DynamoDB", category: "data-processing", proficiency: 75 },
+  { id: 25, name: "Data Warehousing", category: "data-processing", proficiency: 80 },
+  { id: 26, name: "ETL/ELT", category: "data-processing", proficiency: 85 },
+  { id: 27, name: "Statistics", category: "data-processing", proficiency: 85 },
+  { id: 28, name: "Time Series Forecasting", category: "data-processing", proficiency: 80 },
+  { id: 29, name: "PCA", category: "data-processing", proficiency: 80 },
+  { id: 30, name: "MATLAB", category: "data-processing", proficiency: 75 },
+  
+  // Big Data & Distributed Systems
+  { id: 31, name: "Apache Spark", category: "data-processing", proficiency: 85 },
+  { id: 32, name: "Hadoop", category: "data-processing", proficiency: 75 },
+  { id: 33, name: "Kafka", category: "data-processing", proficiency: 70 },
+  { id: 34, name: "AWS EMR", category: "cloud-computing", proficiency: 80 },
+  { id: 35, name: "MapReduce", category: "data-processing", proficiency: 75 },
+  { id: 36, name: "Distributed Computing", category: "data-processing", proficiency: 80 },
+  { id: 37, name: "Apache Airflow", category: "tools", proficiency: 75 },
   
   // Cloud Computing
-  { id: 16, name: "AWS", category: "cloud-computing", proficiency: 90 },
-  { id: 17, name: "Azure", category: "cloud-computing", proficiency: 85 },
-  { id: 18, name: "GCP", category: "cloud-computing", proficiency: 80 },
-  { id: 19, name: "Docker", category: "cloud-computing", proficiency: 85 },
-  { id: 20, name: "Kubernetes", category: "cloud-computing", proficiency: 80 },
-  { id: 21, name: "Terraform", category: "cloud-computing", proficiency: 75 },
+  { id: 38, name: "AWS", category: "cloud-computing", proficiency: 90 },
+  { id: 39, name: "Azure", category: "cloud-computing", proficiency: 85 },
+  { id: 40, name: "GCP", category: "cloud-computing", proficiency: 80 },
+  { id: 41, name: "Docker", category: "cloud-computing", proficiency: 85 },
+  { id: 42, name: "Kubernetes", category: "cloud-computing", proficiency: 80 },
+  { id: 43, name: "Terraform", category: "cloud-computing", proficiency: 75 },
+  { id: 44, name: "SageMaker", category: "cloud-computing", proficiency: 80 },
+  { id: 45, name: "Redshift", category: "cloud-computing", proficiency: 75 },
   
   // Programming
-  { id: 22, name: "Python", category: "programming", proficiency: 95 },
-  { id: 23, name: "C++", category: "programming", proficiency: 80 },
-  { id: 24, name: "Java", category: "programming", proficiency: 70 },
-  { id: 25, name: "JavaScript", category: "programming", proficiency: 88 },
-  { id: 26, name: "React", category: "programming", proficiency: 85 },
-  { id: 27, name: "TypeScript", category: "programming", proficiency: 80 },
-  { id: 28, name: "Node.js", category: "programming", proficiency: 75 },
+  { id: 46, name: "Python", category: "programming", proficiency: 95 },
+  { id: 47, name: "R", category: "programming", proficiency: 75 },
+  { id: 48, name: "JavaScript", category: "programming", proficiency: 88 },
+  { id: 49, name: "TypeScript", category: "programming", proficiency: 80 },
+  { id: 50, name: "React", category: "programming", proficiency: 85 },
+  { id: 51, name: "Java", category: "programming", proficiency: 70 },
+  { id: 52, name: "Flask", category: "programming", proficiency: 80 },
+  { id: 53, name: "REST APIs", category: "programming", proficiency: 85 },
+  
+  // Natural Language Processing
+  { id: 54, name: "NLTK", category: "machine-learning", proficiency: 80 },
+  { id: 55, name: "spaCy", category: "machine-learning", proficiency: 80 },
+  { id: 56, name: "RAG", category: "deep-learning", proficiency: 85 },
+  { id: 57, name: "Vector Databases", category: "data-processing", proficiency: 75 },
+  { id: 58, name: "Text Classification", category: "machine-learning", proficiency: 85 },
+  
+  // Data Visualization
+  { id: 59, name: "Tableau", category: "tools", proficiency: 80 },
+  { id: 60, name: "Plotly", category: "tools", proficiency: 75 },
+  { id: 61, name: "Interactive Dashboards", category: "tools", proficiency: 80 },
+  { id: 62, name: "Business Intelligence", category: "tools", proficiency: 80 },
   
   // Tools & Libraries
-  { id: 29, name: "Git", category: "tools", proficiency: 90 },
-  { id: 30, name: "Jupyter", category: "tools", proficiency: 95 },
-  { id: 31, name: "HTML5", category: "tools", proficiency: 90 },
-  { id: 32, name: "CSS3", category: "tools", proficiency: 85 }
+  { id: 63, name: "Git", category: "tools", proficiency: 90 },
+  { id: 64, name: "Jupyter", category: "tools", proficiency: 95 },
+  { id: 65, name: "HTML5", category: "tools", proficiency: 90 },
+  { id: 66, name: "CSS3", category: "tools", proficiency: 85 }
 ];
 
 export const contactInfo: ContactInfo = {
@@ -255,39 +304,61 @@ export const contactInfo: ContactInfo = {
 
 export const personalInfo = {
   name: "Sai Dhiren Musaloji",
-  title: "Data Scientist & AI Research Engineer",
+  title: "AI Data Engineer & Data Scientist",
   location: "New Jersey, USA",
   education: "MS in Data Science - New Jersey Institute of Technology (GPA: 3.85/4.0)",
-  experience: "AI Research Intern at Tech Mahindra, Cloud Computing Intern at LTIMindtree",
-  about: "Passionate data scientist and AI research engineer with expertise in machine learning, deep learning, and cloud computing. Recent graduate with MS in Data Science from NJIT with a strong focus on transformer models, reinforcement learning, and ethical AI practices. Experienced in developing scalable solutions and contributing to national AI initiatives.",
-  aboutDetailed: "My journey into data science began with a curiosity about how machines can learn and make intelligent decisions. Coming from an Electronics and Communication Engineering background, I discovered the fascinating intersection of mathematics, programming, and human cognition that defines modern AI.\n\nWhat drives me is the potential of AI to solve real-world problems that impact people's lives. During my time at Tech Mahindra's Makers Lab, I contributed to Project Indus, a national initiative to develop Large Language Models for Indian languages.\n\nI believe in the power of continuous learning and experimentation. My portfolio reflects this philosophy - from implementing adversarial attacks to understand AI vulnerabilities, to building RAG systems for intelligent research assistance."
+  experience: "AI Data Engineer Intern at Tech Mahindra",
+  about: "Passionate AI Data Engineer and Data Scientist with expertise in machine learning, deep learning, and cloud computing. Recent graduate with MS in Data Science from NJIT with a strong focus on transformer models, reinforcement learning, and ethical AI practices. Experienced in developing scalable solutions, building end-to-end data pipelines, and contributing to national AI initiatives.",
+  aboutDetailed: "My journey into data science began with a curiosity about how machines can learn and make intelligent decisions. Coming from an Electronics and Communication Engineering background, I discovered the fascinating intersection of mathematics, programming, and human cognition that defines modern AI.\n\nWhat drives me is the potential of AI to solve real-world problems that impact people's lives. During my time at Tech Mahindra's Makers Lab as an AI Data Engineer Intern, I contributed to Project Indus, a national initiative to develop Large Language Models for Indian languages, while building comprehensive data pipelines and NLP workflows.\n\nI believe in the power of continuous learning and experimentation. My portfolio reflects this philosophy - from implementing adversarial attacks to understand AI vulnerabilities, to building RAG systems for intelligent research assistance, and developing enterprise-grade data solutions."
 };
 
 export const experience = [
   {
     id: 1,
-    title: "AI Research Intern",
-    company: "Tech Mahindra, Makers Lab",
-    location: "Pune, India",
-    duration: "Oct 2023 - Jan 2024",
+    title: "Data Engineer",
+    company: "TAWIN Solutions LLC",
+    location: "Dallas, TX",
+    duration: "May 2025 – Current",
     description: [
-      "Contributed to Project Indus, a national initiative to develop a Large Language Model supporting over 15 Indian languages",
-      "Developed and optimized data preprocessing pipelines for tokenization, normalization, and character embedding in low-resource dialects",
-      "Benchmarked transformer models using metrics like perplexity, BLEU, and F1 to evaluate performance on complex language tasks",
-      "Collaborated with cross-functional teams to promote ethical AI practices and model alignment for underrepresented communities"
+      "Architected scalable schemas across Azure SQL, Synapse, and on‑prem SQL Server to strengthen BI foundations and analytics capabilities",
+      "Built robust ETL/ELT pipelines with Azure Data Factory and SSIS to integrate heterogeneous sources into the EDW with quality and lineage",
+      "Delivered ML solutions for predictive pricing using Azure ML with MLOps via Azure DevOps, Azure Monitor, versioning, and automated retraining",
+      "Modeled dimensional (star/snowflake) and relational schemas in Synapse enabling self‑service BI across business units",
+      "Optimized performance with query tuning, indexing, and stored procedure refactors across Azure SQL and SQL Server",
+      "Leveraged AWS EC2, RDS, and S3 for dev/test compute, managed databases, and data lake storage/backup",
+      "Implemented security and governance via Azure Key Vault and Azure Purview for credential management and lineage",
+      "Partnered with stakeholders to translate complex requirements into actionable technical specifications and solutions",
+      "Drove cross‑functional collaboration among analysts, DBAs, developers, and data scientists for integrated BI delivery",
+      "Established technical documentation standards: architecture diagrams, data dictionaries, ETL docs, and runbooks",
+      "Developed advanced SQL: complex queries, stored procedures, UDFs, views, and triggers for automation and real‑time reporting",
+      "Implemented CI/CD with Azure DevOps for automated deployment of database objects and ETL packages"
     ]
   },
   {
     id: 2,
+    title: "AI Data Engineer Intern",
+    company: "Tech Mahindra, Makers Lab",
+    location: "Pune, India",
+    duration: "Oct 2023 – Jan 2024",
+    description: [
+      "Implemented ADF pipelines to ETL data from Snowflake, DynamoDB, PostgreSQL, and Oracle; processed 500K+ multilingual texts with 99.2% quality",
+      "Engineered NLP preprocessing with Python and Spark (tokenization, regex filtering, normalization) improving accuracy by 25% across 8 languages",
+      "Built automated data quality checks with statistical outlier detection; reduced manual cleaning by 60% and improved content quality by 20%",
+      "Collaborated to document and deploy production ML models; CI/CD reduced deployment time from hours to minutes with 99.8% uptime"
+    ]
+  }
+  ,
+  {
+    id: 3,
     title: "Cloud Computing Intern",
     company: "LTIMindtree",
-    location: "Hyderabad, Telangana, India",
+    location: "Hyderabad, India",
     duration: "Feb 2023 - Apr 2023",
     description: [
-      "Gained comprehensive knowledge of cloud computing fundamentals, focusing on Amazon Web Services (AWS)",
-      "Accelerated data processing workflows using EC2, S3, Lambda, VPC, and RDS, alongside Docker, Kubernetes, and Terraform",
-      "Participated in cloud migration and big data processing initiatives, optimizing resource allocation and cost-efficiency",
-      "Developed hands-on expertise in infrastructure-as-code (IaC), container orchestration, and DevOps best practices"
+      "Studied cloud fundamentals with emphasis on AWS core services",
+      "Accelerated data workflows using EC2, S3, Lambda, VPC, and RDS; used Docker, Kubernetes, Terraform",
+      "Assisted cloud migration and big data initiatives improving resource use and cost efficiency",
+      "Gained hands‑on IaC, container orchestration, and DevOps best practices"
     ]
   }
 ];
@@ -315,16 +386,16 @@ export const education = [
     id: 2,
     degree: "B.Tech in Electronics and Communication Engineering",
     school: "Mahatma Gandhi Institute of Technology",
-    duration: "Jun 2019 - Apr 2023",
-    gpa: "3.0/4.0",
+    duration: "Jun 2019 - Jun 2023",
+    gpa: "3.00/4.0",
     capstone: "Designed and implemented a Handwritten Telugu Character Recognition framework utilizing Optical Character Recognition (OCR) methods integrated with Convolutional Neural Networks (CNNs) in TensorFlow and Keras. Led data acquisition and preprocessing, constructing a diverse, high-dimensional dataset representing handwriting variability across users. Trained and evaluated deep learning models for character-level recognition with robust generalization."
   }
 ];
 
 export const projectCategories = [
-  { id: "all", name: "All Projects", count: 17 },
+  { id: "all", name: "All Projects", count: 18 },
   { id: "data-analysis", name: "Data Analysis", count: 3 },
-  { id: "data-engineering", name: "Data Engineering", count: 1 },
+  { id: "data-engineering", name: "Data Engineering", count: 2 },
   { id: "ml-modeling", name: "ML Modeling", count: 7 },
   { id: "engineering-solutions", name: "Engineering Solutions", count: 3 },
   { id: "generative-ai", name: "Generative AI", count: 3 }

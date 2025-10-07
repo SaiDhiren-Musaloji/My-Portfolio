@@ -54,6 +54,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   border-left: 4px solid transparent;
+  cursor: pointer;
 }
 
 .experience-card:hover {
@@ -94,8 +95,15 @@
 }
 
 .location::before {
-  content: '📍';
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
   margin-right: 0.3rem;
+  background-image: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/geo-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .duration {
@@ -131,6 +139,43 @@
 
 .experience-description li:last-child {
   margin-bottom: 0;
+}
+
+.experience-toggle {
+  margin-top: 0.8rem;
+  background: transparent;
+  border: none;
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.experience-toggle:hover {
+  text-decoration: underline;
+}
+
+.experience-hint {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.8rem;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.chevron {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid #7f8c8d;
+  border-bottom: 2px solid #7f8c8d;
+  transform: rotate(-45deg);
+  transition: transform 0.2s ease;
+}
+
+.chevron.up {
+  transform: rotate(135deg);
 }
 
 @media (max-width: 768px) {
