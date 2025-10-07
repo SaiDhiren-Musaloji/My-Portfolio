@@ -157,15 +157,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Data Engineering"
   }
-  {
-    id: 18,
-    title: "Banking Transaction Management System - Agile Full-Stack RDBMS Development & Analytics",
-    description: "Engineered enterprise-grade relational database management system integrating MySQL primary databases with Snowflake data warehouse and DynamoDB document storage for banking network infrastructure, designing normalized schema with 15+ tables to handle 10,000+ daily transactions with 99.9% data integrity and sub-200ms query response times. Developed user-centric web interface using Flask and REST APIs to support comprehensive transaction processing workflows, implementing real-time balance updates and transaction history tracking for 500+ concurrent users based on stakeholder requirements. Implemented agile development methodology across 2-sprint delivery cycle, conducting user story analysis and stakeholder requirement gathering to deliver full-stack banking solution with transaction management, user authentication, and reporting capabilities.",
-    image: "/images/projects/database.png",
-    technologies: ["MySQL", "Snowflake", "DynamoDB", "Flask", "REST APIs", "Python", "Agile Development", "Database Design", "Web Interface", "Transaction Management"],
-    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "Data Engineering"
-  }
 
 ];
 
@@ -393,7 +384,7 @@ export const education = [
 ];
 
 export const projectCategories = [
-  { id: "all", name: "All Projects", count: 17 },
+  { id: "all", name: "All Projects", count: 16 },
   { id: "data-analysis", name: "Data Analysis", count: 3 },
   { id: "data-engineering", name: "Data Engineering", count: 2 },
   { id: "ml-modeling", name: "ML Modeling", count: 7 },
