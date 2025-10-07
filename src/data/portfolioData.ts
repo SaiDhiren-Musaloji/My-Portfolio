@@ -123,15 +123,6 @@ export const projects: Project[] = [
   },
   {
     id: 14,
-    title: "High-Availability Financial Analytics System",
-    description: "Problem: Traditional banking analytics systems lack real-time processing capabilities and fail to handle high concurrency requirements for fraud detection and transactional analysis. Solution: Developed transactional analytics platform with responsive dashboard, anomaly detection, and time-series mapping, containerized using Docker with CI/CD pipelines for high-availability deployment.",
-    image: "/images/projects/database.png",
-    technologies: ["Python", "Docker", "CI/CD", "Anomaly Detection", "Time Series", "Financial Analytics"],
-    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "Data Engineering"
-  },
-  {
-    id: 15,
     title: "Parallelized ML Pipeline for Oenological Forecasting",
     description: "Problem: Traditional wine quality prediction models lack scalability and fail to handle large-scale datasets efficiently, resulting in slow training times and limited throughput for production inference. Solution: Created Spark-based distributed system on AWS EMR with partitioned data and in-memory caching, achieving 60% training speed improvement and high-throughput inference with autoscaling and performance logging.",
     image: "/images/projects/Parallel.png",
@@ -140,7 +131,7 @@ export const projects: Project[] = [
     category: "Engineering Solutions"
   },
   {
-    id: 16,
+    id: 15,
     title: "Flight Data Analysis - Big Data Analytics & Performance Optimization",
     description: "Engineered scalable AWS-based MapReduce data processing pipelines using Apache Spark and Oozie orchestration, analyzing 22-year aviation dataset (1987-2008) containing 120M+ flight records with 40% improved query performance optimization. Implemented comprehensive scalability testing framework across varying data volumes (1GB to 500GB), demonstrating linear performance scalability and optimizing AWS resource allocation to reduce processing costs by 35%. Established high-performance aviation analytics platform supporting 15 concurrent users with sub-3-second query response times, delivering actionable insights on 5,000+ flight routes for executive decision-making processes.",
     image: "/images/projects/flight_data.png",
@@ -149,7 +140,7 @@ export const projects: Project[] = [
     category: "Data Analysis"
   },
   {
-    id: 17,
+    id: 16,
     title: "Equity Portfolio Management - Financial Analytics & Quantitative Analysis",
     description: "Orchestrated comprehensive portfolio optimization analysis using Python (Pandas, NumPy, Matplotlib) to evaluate $5M equity portfolio, implementing advanced risk-return modeling that generated 18% annual return improvement over S&P 500 benchmark. Directed quantitative analysis team of 3 members in developing algorithmic position sizing strategies, utilizing simulations across 500+ securities to reduce portfolio volatility by 23% while maintaining 12.4% target return threshold. Architected automated performance tracking system monitoring 15 key performance indicators (KPIs) daily, enabling real-time investment decisions that improved Sharpe ratio from 1.2 to 1.8 over 12-month analytical period.",
     image: "/images/projects/portfolio.png",
@@ -157,6 +148,15 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Engineering Solutions"
   },
+  {
+    id: 17,
+    title: "Banking Transaction Management System - Agile Full-Stack RDBMS Development & Analytics",
+    description: "Engineered enterprise-grade relational database management system integrating MySQL primary databases with Snowflake data warehouse and DynamoDB document storage for banking network infrastructure, designing normalized schema with 15+ tables to handle 10,000+ daily transactions with 99.9% data integrity and sub-200ms query response times. Developed user-centric web interface using Flask and REST APIs to support comprehensive transaction processing workflows, implementing real-time balance updates and transaction history tracking for 500+ concurrent users based on stakeholder requirements. Implemented agile development methodology across 2-sprint delivery cycle, conducting user story analysis and stakeholder requirement gathering to deliver full-stack banking solution with transaction management, user authentication, and reporting capabilities.",
+    image: "/images/projects/database.png",
+    technologies: ["MySQL", "Snowflake", "DynamoDB", "Flask", "REST APIs", "Python", "Agile Development", "Database Design", "Web Interface", "Transaction Management"],
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
+    category: "Data Engineering"
+  }
   {
     id: 18,
     title: "Banking Transaction Management System - Agile Full-Stack RDBMS Development & Analytics",
@@ -393,10 +393,10 @@ export const education = [
 ];
 
 export const projectCategories = [
-  { id: "all", name: "All Projects", count: 18 },
+  { id: "all", name: "All Projects", count: 17 },
   { id: "data-analysis", name: "Data Analysis", count: 3 },
   { id: "data-engineering", name: "Data Engineering", count: 2 },
   { id: "ml-modeling", name: "ML Modeling", count: 7 },
   { id: "engineering-solutions", name: "Engineering Solutions", count: 3 },
   { id: "generative-ai", name: "Generative AI", count: 3 }
-]; 
+];
