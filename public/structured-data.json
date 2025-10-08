@@ -1,0 +1,55 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sai Dhiren Musaloji",
+  "jobTitle": "AI Data Engineer & Data Scientist",
+  "description": "AI Data Engineer and Data Scientist with expertise in machine learning, deep learning, and cloud computing. MS in Data Science from NJIT.",
+  "url": "https://your-domain.com",
+  "image": "https://your-domain.com/images/profile.png",
+  "sameAs": [
+    "https://www.linkedin.com/in/musalojidhiren/",
+    "https://github.com/SaiDhiren-Musaloji"
+  ],
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "New Jersey Institute of Technology",
+    "url": "https://www.njit.edu"
+  },
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "MS in Data Science",
+      "credentialCategory": "degree",
+      "recognizedBy": {
+        "@type": "EducationalOrganization",
+        "name": "New Jersey Institute of Technology"
+      }
+    }
+  ],
+  "worksFor": [
+    {
+      "@type": "Organization",
+      "name": "TAWIN Solutions LLC",
+      "jobTitle": "Data Engineer"
+    }
+  ],
+  "knowsAbout": [
+    "Machine Learning",
+    "Deep Learning",
+    "Data Science",
+    "Python",
+    "AWS",
+    "Azure",
+    "SQL",
+    "Apache Spark",
+    "TensorFlow",
+    "PyTorch"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New Jersey",
+    "addressCountry": "USA"
+  },
+  "email": "musalojidhiren@gmail.com",
+  "telephone": "+1 (862) 423-8830"
+}
