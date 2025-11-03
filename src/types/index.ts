@@ -6,7 +6,9 @@ export interface Project {
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
-  category?: string;
+  category?: string; // Legacy support
+  primaryCategory: string; // Main category for display priority
+  categories: string[]; // All categories this project belongs to
   // Additional details for modal
   detailedDescription?: string;
   challenges?: string[];

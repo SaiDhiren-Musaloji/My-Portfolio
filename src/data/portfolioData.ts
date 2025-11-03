@@ -9,6 +9,8 @@ export const projects: Project[] = [
     technologies: ["Python", "Google Gemini API", "BART", "BERT", "DistilBERT", "RAG", "NLP", "newspaper3k", "scikit-learn", "Vector Database"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Generative AI",
+    primaryCategory: "generative-ai",
+    categories: ["generative-ai", "nlp-speech", "cloud-mlops"],
     detailedDescription: "Developed an intelligent research assistant integrating Google Gemini 1.5 Flash API with retrieval-augmented generation, combining web search capabilities with contextual document processing. Built custom data processing pipeline integrating newspaper3k for article extraction, serper.dev for search results, with custom error handling, rate limiting, and multi-model NLP processing (BART, BERT, DistilBERT). Implemented custom vector database solution from scratch using scikit-learn's NearestNeighbors and numpy arrays for in-memory semantic similarity search and document retrieval. Engineered end-to-end RAG workflow orchestrating pre-trained transformer models for embedding generation, custom retrieval logic, and dynamic prompt construction for contextually-grounded responses. Designed modular architecture with asynchronous processing, session management, and multi-model integration for summarization, named entity recognition, and sentiment analysis."
   },
   {
@@ -19,6 +21,8 @@ export const projects: Project[] = [
     technologies: ["Python", "SQL", "Power BI", "Apache Airflow", "Snowflake", "DynamoDB", "Machine Learning", "Data Analysis", "Cost Optimization", "ETL"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Data Analysis",
+    primaryCategory: "analytics-bi",
+    categories: ["analytics-bi", "data-engineering"],
     detailedDescription: "Built a comprehensive software license compliance and cost optimization system for enterprise environments. The solution analyzes software usage patterns, identifies compliance risks, and provides actionable insights for cost reduction."
   },
   {
@@ -29,6 +33,8 @@ export const projects: Project[] = [
     technologies: ["Python", "PyTorch", "TensorFlow", "CIFAR-10", "Adversarial ML", "Computer Vision"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "ML Modeling",
+    primaryCategory: "machine-learning",
+    categories: ["machine-learning"],
     detailedDescription: "Implemented ensemble-based adversarial attacks using Iterative Fast Gradient Sign Method (I-FGSM) with gradient aggregation across multiple pre-trained models, achieving 85% attack success rate while maintaining visual imperceptibility."
   },
   {
@@ -38,7 +44,9 @@ export const projects: Project[] = [
     image: "/images/projects/bert.png",
     technologies: ["Python", "BERT", "Transformers", "PyTorch", "NLP", "Question Answering"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "Generative AI"
+    category: "Generative AI",
+    primaryCategory: "generative-ai",
+    categories: ["generative-ai", "nlp-speech"]
   },
   {
     id: 5,
@@ -47,7 +55,9 @@ export const projects: Project[] = [
     image: "/images/projects/lunarlander.png",
     technologies: ["Python", "PyTorch", "OpenAI Gym", "Reinforcement Learning", "Actor-Critic"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "ML Modeling"
+    category: "ML Modeling",
+    primaryCategory: "machine-learning",
+    categories: ["machine-learning"]
   },
   {
     id: 6,
@@ -56,7 +66,9 @@ export const projects: Project[] = [
     image: "/images/projects/deep_learning.png",
     technologies: ["Python", "PyTorch", "Graph Neural Networks", "GAT", "Financial ML"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "ML Modeling"
+    category: "ML Modeling",
+    primaryCategory: "machine-learning",
+    categories: ["machine-learning"]
   },
   {
     id: 7,
@@ -65,7 +77,9 @@ export const projects: Project[] = [
     image: "/images/projects/Transformer-Based Speaker Classification.png",
     technologies: ["Python", "PyTorch", "Transformers", "Audio Processing", "MFCC"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "ML Modeling"
+    category: "ML Modeling",
+    primaryCategory: "nlp-speech",
+    categories: ["nlp-speech", "machine-learning"]
   },
   {
     id: 8,
@@ -74,7 +88,9 @@ export const projects: Project[] = [
     image: "/images/projects/Self-Supervised Learning for User Localization.jpg",
     technologies: ["Python", "PyTorch", "Self-Supervised Learning", "Autoencoders", "Wireless ML"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "ML Modeling"
+    category: "ML Modeling",
+    primaryCategory: "machine-learning",
+    categories: ["machine-learning"]
   },
   {
     id: 9,
@@ -83,7 +99,9 @@ export const projects: Project[] = [
     image: "/images/projects/bert.png",
     technologies: ["Python", "PyTorch", "Transformers", "SentencePiece", "NMT"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "Generative AI"
+    category: "Generative AI",
+    primaryCategory: "generative-ai",
+    categories: ["generative-ai", "nlp-speech"]
   },
   {
     id: 10,
@@ -92,7 +110,9 @@ export const projects: Project[] = [
     image: "/images/projects/Deep Neural Networks for Speech Classification.webp",
     technologies: ["Python", "PyTorch", "Speech Processing", "MFCC", "Phoneme Classification"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "ML Modeling"
+    category: "ML Modeling",
+    primaryCategory: "nlp-speech",
+    categories: ["nlp-speech", "machine-learning"]
   },
   {
     id: 11,
@@ -101,7 +121,9 @@ export const projects: Project[] = [
     image: "/images/projects/telugu handwritten recognition.png",
     technologies: ["TensorFlow", "Keras", "CNN", "OpenCV", "OCR"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "ML Modeling"
+    category: "ML Modeling",
+    primaryCategory: "nlp-speech",
+    categories: ["nlp-speech", "machine-learning"]
   },
   {
     id: 12,
@@ -110,7 +132,9 @@ export const projects: Project[] = [
     image: "/images/projects/sqs.png",
     technologies: ["AWS", "Docker", "Kubernetes", "Terraform", "Cloud Computing"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "Engineering Solutions"
+    category: "Engineering Solutions",
+    primaryCategory: "systems-design",
+    categories: ["systems-design", "cloud-mlops", "data-engineering"]
   },
   {
     id: 13,
@@ -119,7 +143,9 @@ export const projects: Project[] = [
     image: "/images/projects/traffic_forecasting.png",
     technologies: ["Python", "ARIMA", "LSTM", "GNN", "PCA", "t-SNE", "Time Series"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "Data Analysis"
+    category: "Data Analysis",
+    primaryCategory: "analytics-bi",
+    categories: ["analytics-bi", "machine-learning"]
   },
   {
     id: 14,
@@ -128,7 +154,9 @@ export const projects: Project[] = [
     image: "/images/projects/Parallel.png",
     technologies: ["Apache Spark", "AWS EMR", "ML Pipeline", "Distributed Computing", "Wine Quality Prediction"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "Engineering Solutions"
+    category: "Engineering Solutions",
+    primaryCategory: "data-engineering",
+    categories: ["data-engineering", "cloud-mlops", "systems-design"]
   },
   {
     id: 15,
@@ -137,7 +165,9 @@ export const projects: Project[] = [
     image: "/images/projects/flight_data.png",
     technologies: ["AWS", "Apache Spark", "MapReduce", "Apache Oozie", "Big Data", "Data Analysis", "Scalability Testing", "Performance Optimization"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "Data Analysis"
+    category: "Data Analysis",
+    primaryCategory: "analytics-bi",
+    categories: ["analytics-bi", "data-engineering", "cloud-mlops"]
   },
   {
     id: 16,
@@ -146,7 +176,9 @@ export const projects: Project[] = [
     image: "/images/projects/portfolio.png",
     technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Quantitative Analysis", "Risk Modeling", "Algorithmic Trading", "Portfolio Optimization", "Sharpe Ratio"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "Engineering Solutions"
+    category: "Engineering Solutions",
+    primaryCategory: "analytics-bi",
+    categories: ["analytics-bi"]
   },
   {
     id: 17,
@@ -155,7 +187,21 @@ export const projects: Project[] = [
     image: "/images/projects/database.png",
     technologies: ["MySQL", "Snowflake", "DynamoDB", "Flask", "REST APIs", "Python", "Agile Development", "Database Design", "Web Interface", "Transaction Management"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "Data Engineering"
+    category: "Data Engineering",
+    primaryCategory: "systems-design",
+    categories: ["systems-design", "data-engineering"]
+  },
+  {
+    id: 18,
+    title: "Real-Time Ride-Matching Platform (Uber-Like System)",
+    description: "Architected a dual-index geospatial platform processing 50K+ GPS updates/min; Redis Geo for low-latency lookups (80 ms p50) and PostGIS for durable analytics, yielding a 68% reduction in match latency. Built a streaming ingestion pipeline with coordinate normalization and dual-write patterns; achieved sub-1s end-to-end data freshness and 99.9% location accuracy in load tests. Implemented distributed locking and idempotent booking flows (Redis) to guarantee exactly-one driver assignment; eliminated duplicate rides across 5K+ concurrent booking requests. Engineered WebSocket fanout delivering ETAs and booking state to 5K+ concurrent clients with ~200 ms median propagation; optimized connection pooling and broadcast paths. Designed an event-driven, queue-based architecture decoupling booking, availability, and notifications with backpressure, exponential backoff, and dead-letter queues for resilience under surges. Optimized hot paths with TTL-based cache eviction, selective invalidation, and time-partitioned storage; reduced DB load ~60% while maintaining 85%+ cache hit rates. Built end-to-end observability: match latency, lock contention, throughput, and data freshness; added reconciliation to detect Redis↔Postgres drift with automated consistency checks and structured logs. Containerized services with Docker and automated synthetic city-scale benchmarks and capacity planning to validate SLOs and scaling thresholds.",
+    image: "/images/projects/placeholder.png",
+    technologies: ["Redis Geo", "PostgreSQL", "PostGIS", "WebSockets", "Node.js", "Python", "Docker", "Distributed Systems", "Geospatial Indexing", "Queue-based Architecture", "Monitoring", "Observability"],
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
+    category: "Engineering Solutions",
+    primaryCategory: "systems-design",
+    categories: ["systems-design", "data-engineering", "cloud-mlops"],
+    detailedDescription: "Real-Time Ride-Matching Platform (Uber-Like System) - Architected a dual-index geospatial platform processing 50K+ GPS updates/min; Redis Geo for low-latency lookups (80 ms p50) and PostGIS for durable analytics, yielding a 68% reduction in match latency. Built a streaming ingestion pipeline with coordinate normalization and dual-write patterns; achieved sub-1s end-to-end data freshness and 99.9% location accuracy in load tests. Implemented distributed locking and idempotent booking flows (Redis) to guarantee exactly-one driver assignment; eliminated duplicate rides across 5K+ concurrent booking requests. Engineered WebSocket fanout delivering ETAs and booking state to 5K+ concurrent clients with ~200 ms median propagation; optimized connection pooling and broadcast paths. Designed an event-driven, queue-based architecture decoupling booking, availability, and notifications with backpressure, exponential backoff, and dead-letter queues for resilience under surges. Optimized hot paths with TTL-based cache eviction, selective invalidation, and time-partitioned storage; reduced DB load ~60% while maintaining 85%+ cache hit rates. Built end-to-end observability: match latency, lock contention, throughput, and data freshness; added reconciliation to detect Redis↔Postgres drift with automated consistency checks and structured logs. Containerized services with Docker and automated synthetic city-scale benchmarks and capacity planning to validate SLOs and scaling thresholds. Impact: Zero duplicate bookings in stress tests; sustained 50K+ GPS updates/min; ~60% DB load reduction; sub-200 ms client updates at 5K+ concurrency; ~99.9% uptime in test environments."
   }
 
 ];
@@ -384,10 +430,12 @@ export const education = [
 ];
 
 export const projectCategories = [
-  { id: "all", name: "All Projects", count: 16 },
-  { id: "data-analysis", name: "Data Analysis", count: 3 },
-  { id: "data-engineering", name: "Data Engineering", count: 2 },
-  { id: "ml-modeling", name: "ML Modeling", count: 7 },
-  { id: "engineering-solutions", name: "Engineering Solutions", count: 3 },
-  { id: "generative-ai", name: "Generative AI", count: 3 }
+  { id: "all", name: "All Projects", count: 18 },
+  { id: "generative-ai", name: "Generative AI", count: 3 },
+  { id: "nlp-speech", name: "NLP & Speech", count: 5 },
+  { id: "machine-learning", name: "Machine Learning", count: 8 },
+  { id: "data-engineering", name: "Data Engineering", count: 7 },
+  { id: "systems-design", name: "Systems Design", count: 5 },
+  { id: "cloud-mlops", name: "Cloud & MLOps", count: 6 },
+  { id: "analytics-bi", name: "Analytics & BI", count: 4 }
 ];

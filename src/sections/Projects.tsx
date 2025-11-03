@@ -4,15 +4,26 @@ import ProjectModal from '../components/ProjectModal';
 import './Projects.css';
 
 const Projects: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [filterMode, setFilterMode] = useState<'AND' | 'OR'>('AND');
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const projectsPerPage = 6;
 
-  const filteredProjects = selectedCategory === 'all' 
-    ? projects 
-    : projects.filter(project => project.category?.toLowerCase().replace(/\s+/g, '-') === selectedCategory);
+  const matchesCategory = (projectCategoryId: string, project: typeof projects[number]) => {
+    const legacy = project.category?.toLowerCase().replace(/\s+/g, '-');
+    return project.categories?.includes(projectCategoryId) || project.primaryCategory === projectCategoryId || legacy === projectCategoryId;
+  };
+
+  const filteredProjects = selectedCategories.length === 0
+    ? []
+    : projects.filter(project => {
+        if (filterMode === 'AND') {
+          return selectedCategories.every(cat => matchesCategory(cat, project));
+        }
+        return selectedCategories.some(cat => matchesCategory(cat, project));
+      });
 
   // Calculate pagination
   const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
@@ -20,20 +31,49 @@ const Projects: React.FC = () => {
   const endIndex = startIndex + projectsPerPage;
   const currentProjects = filteredProjects.slice(startIndex, endIndex);
 
-  // Reset to first page when category changes
+  // Reset to first page when selection changes
   React.useEffect(() => {
     setCurrentPage(1);
-  }, [selectedCategory]);
+  }, [selectedCategories, filterMode]);
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
     setSelectedProject(null);
   };
 
-  const handleCategoryChange = (category: string) => {
-    setSelectedCategory(category);
+  const handleCategorySelectSingle = (category: string) => {
+    setSelectedCategories([category]);
     setCurrentPage(1);
     setSelectedProject(null);
+  };
+  const handleToggleCategory = (category: string) => {
+    setSelectedCategories(prev => prev.includes(category)
+      ? prev.filter(c => c !== category)
+      : [...prev, category]
+    );
+  };
+  const handleResetCategories = () => {
+    setSelectedCategories([]);
+    setCurrentPage(1);
+    setSelectedProject(null);
+  };
+
+  const toggleFilterMode = () => {
+    setFilterMode(m => (m === 'AND' ? 'OR' : 'AND'));
+  };
+
+  const countForCategory = (categoryId: string) => {
+    // Predictive count given current selection if this category is applied (respecting mode)
+    if (selectedCategories.length === 0) {
+      return projects.filter(p => matchesCategory(categoryId, p)).length;
+    }
+    if (filterMode === 'AND') {
+      const cats = selectedCategories.includes(categoryId) ? selectedCategories : [...selectedCategories, categoryId];
+      return projects.filter(p => cats.every(c => matchesCategory(c, p))).length;
+    }
+    // OR mode
+    const cats = selectedCategories.includes(categoryId) ? selectedCategories : [...selectedCategories, categoryId];
+    return projects.filter(p => cats.some(c => matchesCategory(c, p))).length;
   };
 
   const handleProjectClick = (projectId: number) => {
@@ -58,18 +98,49 @@ const Projects: React.FC = () => {
           <div className="section-divider"></div>
         </div>
 
-        <div className="projects-categories">
-          {projectCategories.map(category => (
-            <button
-              key={category.id}
-              className={`category-btn ${selectedCategory === category.id ? 'active' : ''}`}
-              onClick={() => handleCategoryChange(category.id)}
-            >
-              {category.name} ({category.count})
-            </button>
-          ))}
-        </div>
+        {selectedCategories.length === 0 ? (
+          <div className="category-tiles">
+            {projectCategories.filter(c => c.id !== 'all').map(category => (
+              <div
+                key={category.id}
+                className="category-card"
+                onClick={() => handleCategorySelectSingle(category.id)}
+              >
+                <div className="category-card-content">
+                  <h3 className="category-card-title">{category.name}</h3>
+                  <p className="category-card-subtitle">{countForCategory(category.id)} projects</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <>
+            <div className="projects-controls">
+              <button className="category-btn back" onClick={handleResetCategories}>
+                ← Back to Categories
+              </button>
+              <div className="filter-toggle" onClick={toggleFilterMode}>
+                <span className={filterMode === 'AND' ? 'active' : ''}>AND</span>
+                <div className={`toggle ${filterMode.toLowerCase()}`}></div>
+                <span className={filterMode === 'OR' ? 'active' : ''}>OR</span>
+              </div>
+            </div>
+            <div className="chips-bar">
+              {projectCategories.filter(c => c.id !== 'all').map(category => (
+                <button
+                  key={category.id}
+                  className={`chip ${selectedCategories.includes(category.id) ? 'selected' : ''}`}
+                  onClick={() => handleToggleCategory(category.id)}
+                >
+                  {category.name}
+                  <span className="chip-count">{countForCategory(category.id)}</span>
+                </button>
+              ))}
+            </div>
+          </>
+        )}
 
+        {selectedCategories.length > 0 && (
         <div className="projects-grid">
           {currentProjects.map(project => (
             <div 
@@ -116,10 +187,25 @@ const Projects: React.FC = () => {
               <div className="project-content">
                 <div className="project-header">
                   <h3 className="project-title">{project.title}</h3>
-                  {project.category && (
-                    <span className="project-category">{project.category}</span>
-                  )}
                 </div>
+                
+                {project.categories && project.categories.length > 0 && (
+                  <div className="project-categories">
+                    {project.categories.slice(0, 3).map((cat, idx) => {
+                      const categoryName = projectCategories.find(c => c.id === cat)?.name || cat;
+                      return (
+                        <span key={idx} className="project-category-badge">
+                          {categoryName}
+                        </span>
+                      );
+                    })}
+                    {project.categories.length > 3 && (
+                      <span className="project-category-badge more">
+                        +{project.categories.length - 3}
+                      </span>
+                    )}
+                  </div>
+                )}
                 
                 <div className="project-technologies">
                   {project.technologies.map((tech, index) => (
@@ -132,9 +218,10 @@ const Projects: React.FC = () => {
             </div>
           ))}
         </div>
+        )}
 
         {/* Pagination */}
-        {totalPages > 1 && (
+        {selectedCategories.length > 0 && totalPages > 1 && (
           <div className="pagination">
             <button 
               className="pagination-btn"
@@ -172,9 +259,11 @@ const Projects: React.FC = () => {
           </div>
         )}
 
-        <div className="projects-info">
-          <p>Showing {startIndex + 1}-{Math.min(endIndex, filteredProjects.length)} of {filteredProjects.length} projects</p>
-        </div>
+        {selectedCategories.length > 0 && (
+          <div className="projects-info">
+            <p>Showing {startIndex + 1}-{Math.min(endIndex, filteredProjects.length)} of {filteredProjects.length} projects</p>
+          </div>
+        )}
       </div>
 
       {/* Project Modal */}
