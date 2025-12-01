@@ -352,50 +352,48 @@ export const personalInfo = {
 export const experience = [
   {
     id: 1,
-    title: "Data Engineer",
-    company: "TAWIN Solutions LLC",
+    title: "ML Engineer",
+    company: "TAWIN Solutions",
     location: "Dallas, TX",
-    duration: "May 2025 – Current",
+    duration: "May 2025 - Present",
     description: [
-      "Architected scalable schemas across Azure SQL, Synapse, and on‑prem SQL Server to strengthen BI foundations and analytics capabilities",
-      "Built robust ETL/ELT pipelines with Azure Data Factory and SSIS to integrate heterogeneous sources into the EDW with quality and lineage",
-      "Delivered ML solutions for predictive pricing using Azure ML with MLOps via Azure DevOps, Azure Monitor, versioning, and automated retraining",
-      "Modeled dimensional (star/snowflake) and relational schemas in Synapse enabling self‑service BI across business units",
-      "Optimized performance with query tuning, indexing, and stored procedure refactors across Azure SQL and SQL Server",
-      "Leveraged AWS EC2, RDS, and S3 for dev/test compute, managed databases, and data lake storage/backup",
-      "Implemented security and governance via Azure Key Vault and Azure Purview for credential management and lineage",
-      "Partnered with stakeholders to translate complex requirements into actionable technical specifications and solutions",
-      "Drove cross‑functional collaboration among analysts, DBAs, developers, and data scientists for integrated BI delivery",
-      "Established technical documentation standards: architecture diagrams, data dictionaries, ETL docs, and runbooks",
-      "Developed advanced SQL: complex queries, stored procedures, UDFs, views, and triggers for automation and real‑time reporting",
-      "Implemented CI/CD with Azure DevOps for automated deployment of database objects and ETL packages"
+      "Data consulting firm serving enterprise clients; developing AI-powered products.",
+      "Architecting proof-of-concept food recommendation system using Azure AI Foundry for investor presentation, designing intelligent algorithm that analyzes user mood, cravings, dietary preferences, and geolocation to suggest optimal nearby cuisine options.",
+      "Building ML pipeline integrating sentiment analysis, preference learning, and collaborative filtering with real-time restaurant data APIs, developing adaptive recommendation engine that personalizes suggestions based on contextual factors such as time-of-day, weather, and user history.",
+      "Designing end-to-end system architecture connecting Azure AI services, restaurant discovery APIs, geolocation services, and user preference database, implementing scalable infrastructure to demonstrate commercial viability.",
+      "Environment: Azure Data Factory, Azure Synapse, Azure AI Foundry, Python, SQL, Azure ML, REST APIs."
     ]
   },
   {
     id: 2,
-    title: "AI Data Engineer Intern",
-    company: "Tech Mahindra, Makers Lab",
+    title: "AI Engineer Intern",
+    company: "Tech Mahindra, Makers Lab R&D",
     location: "Pune, India",
-    duration: "Oct 2023 – Jan 2024",
+    duration: "Oct 2023 - Jan 2024",
     description: [
-      "Implemented ADF pipelines to ETL data from Snowflake, DynamoDB, PostgreSQL, and Oracle; processed 500K+ multilingual texts with 99.2% quality",
-      "Engineered NLP preprocessing with Python and Spark (tokenization, regex filtering, normalization) improving accuracy by 25% across 8 languages",
-      "Built automated data quality checks with statistical outlier detection; reduced manual cleaning by 60% and improved content quality by 20%",
-      "Collaborated to document and deploy production ML models; CI/CD reduced deployment time from hours to minutes with 99.8% uptime"
+      "Fortune 500 IT services - Advanced AI research division.",
+      "Contributed to India's first 15+ language LLM research project, owned data pipeline for multilingual text collection, cleaning, and annotation across diverse language families; built preprocessing workflows and transformer architecture components before project transitioned to model training phase.",
+      "Engineered real-time German-to-English transcription system for live meeting recordings, integrated commercial transcription APIs with custom processing layer to deliver near real-time English translations with minimal latency for internal research demos.",
+      "Designed semantic search architecture for LLM knowledge retrieval, conceptualized and prototyped vector-based search mechanisms enabling contextual query understanding beyond keyword matching for next-gen research applications.",
+      "Built full-stack data flow for VR research platform, architected REST API integration connecting frontend application to backend database, establishing scalable communication patterns for immersive computing research projects.",
+      "Collaborated with senior research scientists to prototype AI solutions, learning production-grade MLOps practices and enterprise-scale NLP system design under mentorship.",
+      "Environment: Python, Transformers, NLP, REST APIs, Data Preprocessing, Annotation Tools, API Integration."
     ]
   }
   ,
   {
     id: 3,
     title: "Cloud Computing Intern",
-    company: "LTIMindtree",
+    company: "LTI Mindtree",
     location: "Hyderabad, India",
-    duration: "Feb 2023 - Apr 2023",
+    duration: "Feb 2023 - May 2023",
     description: [
-      "Studied cloud fundamentals with emphasis on AWS core services",
-      "Accelerated data workflows using EC2, S3, Lambda, VPC, and RDS; used Docker, Kubernetes, Terraform",
-      "Assisted cloud migration and big data initiatives improving resource use and cost efficiency",
-      "Gained hands‑on IaC, container orchestration, and DevOps best practices"
+      "Global IT services - Cloud Engineering training program.",
+      "Completed intensive AWS cloud architecture training program, building proof-of-concept data processing workflows demonstrating EC2, S3, Lambda, RDS, and VPC integration for scalable batch processing.",
+      "Implemented Infrastructure-as-Code exercises using Terraform to automate resource provisioning, learning enterprise deployment patterns and environment management best practices.",
+      "Containerized sample microservices with Docker and orchestrated clusters via Kubernetes as part of cloud-native architecture training curriculum.",
+      "Shadowed senior cloud architects on client migration projects, learning real-world patterns for resource optimization and cost efficiency in production environments.",
+      "Environment: Python, AWS (EC2, S3, Lambda, RDS, VPC), Terraform, Docker, Kubernetes."
     ]
   }
 ];
