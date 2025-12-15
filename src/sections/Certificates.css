@@ -30,6 +30,10 @@
   cursor: pointer;
   width: 280px;
   flex-shrink: 0;
+  /* Ensure all certificate cards have the same visual size */
+  height: 380px;
+  display: flex;
+  flex-direction: column;
 }
 
 .certificate-card:hover {
@@ -117,6 +121,8 @@
 
 .certificate-content {
   padding: 1.5rem;
+  /* Make the text area share vertical space consistently */
+  flex: 1;
 }
 
 .certificate-title {

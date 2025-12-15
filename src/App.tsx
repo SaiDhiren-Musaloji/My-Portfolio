@@ -3,7 +3,6 @@ import './App.css';
 import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import Hero from './sections/Hero';
-import About from './sections/About';
 import Experience from './sections/Experience';
 import Education from './sections/Education';
 import Projects from './sections/Projects';
@@ -18,7 +17,6 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <About />
         <Experience />
         <Education />
         <Projects />

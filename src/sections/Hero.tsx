@@ -10,15 +10,6 @@ const Hero: React.FC = () => {
     }
   };
 
-  const downloadResume = () => {
-    const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = `${personalInfo.name.replace(/\s+/g, '_')}_Resume.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <section id="hero" className="hero">
       <div className="hero-background">
@@ -50,15 +41,6 @@ const Hero: React.FC = () => {
                 onClick={() => scrollToSection('contact')}
               >
                 Get In Touch
-              </button>
-              <button 
-                className="btn btn-resume"
-                onClick={downloadResume}
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
-                </svg>
-                Download Resume
               </button>
             </div>
           </div>

@@ -14,18 +14,6 @@ export const projects: Project[] = [
     detailedDescription: "Developed an intelligent research assistant integrating Google Gemini 1.5 Flash API with retrieval-augmented generation, combining web search capabilities with contextual document processing. Built custom data processing pipeline integrating newspaper3k for article extraction, serper.dev for search results, with custom error handling, rate limiting, and multi-model NLP processing (BART, BERT, DistilBERT). Implemented custom vector database solution from scratch using scikit-learn's NearestNeighbors and numpy arrays for in-memory semantic similarity search and document retrieval. Engineered end-to-end RAG workflow orchestrating pre-trained transformer models for embedding generation, custom retrieval logic, and dynamic prompt construction for contextually-grounded responses. Designed modular architecture with asynchronous processing, session management, and multi-model integration for summarization, named entity recognition, and sentiment analysis."
   },
   {
-    id: 2,
-    title: "Software License Compliance Analysis - Enterprise Data Analytics",
-    description: "Orchestrated multi-source data integration project across 25 enterprise systems including Snowflake data warehouse, DynamoDB NoSQL clusters, SQL Server databases, and Cassandra distributed systems, implementing robust ETL processes using Apache Airflow to consolidate 500K+ software license records with 99.5% accuracy for regulatory compliance reporting. Spearheaded development of comprehensive compliance analytics platform using Python and SQL, reducing manual audit processing time by 60% and identifying $180K in cost-optimization opportunities through intelligent license allocation strategies. Constructed interactive Power BI dashboards serving 45+ stakeholders with real-time monitoring capabilities for 1,200+ software licenses, implementing automated alert systems for free, enterprise, and client-billed license categories. Executed advanced pattern recognition analysis on 3-year historical licensing data using machine learning algorithms, achieving 94% accuracy in utilization trend prediction and preventing $75K in unnecessary license renewals.",
-    image: "/images/projects/SC.webp",
-    technologies: ["Python", "SQL", "Power BI", "Apache Airflow", "Snowflake", "DynamoDB", "Machine Learning", "Data Analysis", "Cost Optimization", "ETL"],
-    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
-    category: "Data Analysis",
-    primaryCategory: "analytics-bi",
-    categories: ["analytics-bi", "data-engineering"],
-    detailedDescription: "Built a comprehensive software license compliance and cost optimization system for enterprise environments. The solution analyzes software usage patterns, identifies compliance risks, and provides actionable insights for cost reduction."
-  },
-  {
     id: 3,
     title: "Adversarial Attack on CIFAR-10 Models",
     description: "• Minor, imperceptible perturbations to input images can fool state-of-the-art deep learning models into making incorrect predictions, highlighting critical security vulnerabilities in AI systems\n\n• Implemented ensemble-based adversarial attacks using Iterative Fast Gradient Sign Method (I-FGSM) with gradient aggregation across multiple pre-trained models, achieving 85% attack success rate while maintaining visual imperceptibility.",
@@ -341,59 +329,53 @@ export const contactInfo: ContactInfo = {
 
 export const personalInfo = {
   name: "Sai Dhiren Musaloji",
-  title: "AI Data Engineer & Data Scientist",
-  location: "New Jersey, USA",
+  title: "Data Analyst & AI Engineer",
+  location: "Dallas, TX",
   education: "MS in Data Science - New Jersey Institute of Technology (GPA: 3.85/4.0)",
-  experience: "AI Data Engineer Intern at Tech Mahindra",
-  about: "Passionate AI Data Engineer and Data Scientist with expertise in machine learning, deep learning, and cloud computing. Recent graduate with MS in Data Science from NJIT with a strong focus on transformer models, reinforcement learning, and ethical AI practices. Experienced in developing scalable solutions, building end-to-end data pipelines, and contributing to national AI initiatives.",
-  aboutDetailed: "My journey into data science began with a curiosity about how machines can learn and make intelligent decisions. Coming from an Electronics and Communication Engineering background, I discovered the fascinating intersection of mathematics, programming, and human cognition that defines modern AI.\n\nWhat drives me is the potential of AI to solve real-world problems that impact people's lives. During my time at Tech Mahindra's Makers Lab as an AI Data Engineer Intern, I contributed to Project Indus, a national initiative to develop Large Language Models for Indian languages, while building comprehensive data pipelines and NLP workflows.\n\nI believe in the power of continuous learning and experimentation. My portfolio reflects this philosophy - from implementing adversarial attacks to understand AI vulnerabilities, to building RAG systems for intelligent research assistance, and developing enterprise-grade data solutions."
+  experience: "Data Analyst at TAWIN Solutions LLC",
+  about: "Data Analyst and AI Engineer with expertise in statistical analysis, machine learning, and cloud computing. Currently building data-driven recommendation systems and analytics platforms at TAWIN Solutions. MS in Data Science from NJIT with hands-on experience in multilingual LLM research, real-time data pipelines, and enterprise analytics solutions.",
+  aboutDetailed: "I'm a passionate Data Analyst and AI Engineer with a Master's in Data Science from New Jersey Institute of Technology, where I graduated with a 3.85 GPA. My journey in data science combines rigorous academic training with hands-on industry experience, enabling me to bridge the gap between complex analytical problems and practical, impactful solutions.\n\nCurrently, I'm working as a Data Analyst at TAWIN Solutions LLC in Dallas, where I lead statistical analysis on user preference patterns and build comprehensive data pipelines that power personalized recommendation systems. My work involves integrating real-time APIs, performing sentiment analysis, and developing interactive dashboards that drive data-driven decision-making. I've successfully improved recommendation click-through rates by 23% and achieved 99.2% data accuracy across integrated sources.\n\nPreviously, I contributed to cutting-edge AI research at Tech Mahindra's Makers Lab, where I managed data pipelines for a major multilingual LLM research project spanning 15+ languages. I engineered real-time transcription systems, prototyped semantic search architectures, and built full-stack data flows for VR research platforms. This experience gave me deep exposure to production-grade MLOps and enterprise NLP system design.\n\nMy technical expertise spans machine learning, deep learning, cloud computing, and data engineering. I'm proficient in Python, SQL, Azure, Power BI, and various ML frameworks. I've built everything from RAG-powered research assistants to adversarial attack systems, from transformer-based models to distributed data processing pipelines.\n\nWhat sets me apart is my ability to translate complex analytical insights into actionable business strategies. I thrive in collaborative environments where I can work with cross-functional teams to solve challenging problems. Whether it's optimizing recommendation algorithms, building predictive models, or architecting scalable data solutions, I'm driven by the impact that data-driven decisions can have on business outcomes and user experiences.\n\nI'm always eager to take on new challenges and continue learning. My portfolio reflects my commitment to continuous growth—from understanding AI vulnerabilities through adversarial attacks to building enterprise-grade analytics platforms. I believe in the power of data to transform businesses and improve lives, and I'm excited to contribute to innovative projects that push the boundaries of what's possible with AI and analytics."
 };
 
 export const experience = [
   {
     id: 1,
-    title: "ML Engineer",
+    title: "Data Engineer",
     company: "TAWIN Solutions",
     location: "Dallas, TX",
-    duration: "May 2025 - Present",
+    duration: "May 2025 – Present",
     description: [
-      "Data consulting firm serving enterprise clients; developing AI-powered products.",
-      "Architecting proof-of-concept food recommendation system using Azure AI Foundry for investor presentation, designing intelligent algorithm that analyzes user mood, cravings, dietary preferences, and geolocation to suggest optimal nearby cuisine options.",
-      "Building ML pipeline integrating sentiment analysis, preference learning, and collaborative filtering with real-time restaurant data APIs, developing adaptive recommendation engine that personalizes suggestions based on contextual factors such as time-of-day, weather, and user history.",
-      "Designing end-to-end system architecture connecting Azure AI services, restaurant discovery APIs, geolocation services, and user preference database, implementing scalable infrastructure to demonstrate commercial viability.",
-      "Environment: Azure Data Factory, Azure Synapse, Azure AI Foundry, Python, SQL, Azure ML, REST APIs."
+      "Designed, implemented, and optimized scalable ETL pipelines using SSIS and Python to facilitate the transformation and linkage of data across multiple sources, automating data workflows and establishing data validation frameworks.",
+      "Developed and optimized complex SQL queries and stored procedures in MS SQL Server (Azure and On-Prem), leveraging Window Functions and Aggregate Functions for efficient data joining, filtering, and aggregation.",
+      "Managed data quality and standardization efforts by conducting code reviews and ensuring 99% data accuracy across enterprise data warehouse solutions.",
+      "Translated business requirements into technical BI solutions, designing robust data models supporting analytics and executive reporting needs via Power BI dashboards.",
+      "Environment: MS SQL Server, Azure, SSIS, Power BI, Data Warehousing, ETL, DAX."
     ]
   },
   {
     id: 2,
-    title: "AI Engineer Intern",
+    title: "AI Research Data Analyst Intern",
     company: "Tech Mahindra, Makers Lab R&D",
     location: "Pune, India",
-    duration: "Oct 2023 - Jan 2024",
+    duration: "Oct 2023 – Jan 2024",
     description: [
-      "Fortune 500 IT services - Advanced AI research division.",
-      "Contributed to India's first 15+ language LLM research project, owned data pipeline for multilingual text collection, cleaning, and annotation across diverse language families; built preprocessing workflows and transformer architecture components before project transitioned to model training phase.",
-      "Engineered real-time German-to-English transcription system for live meeting recordings, integrated commercial transcription APIs with custom processing layer to deliver near real-time English translations with minimal latency for internal research demos.",
-      "Designed semantic search architecture for LLM knowledge retrieval, conceptualized and prototyped vector-based search mechanisms enabling contextual query understanding beyond keyword matching for next-gen research applications.",
-      "Built full-stack data flow for VR research platform, architected REST API integration connecting frontend application to backend database, establishing scalable communication patterns for immersive computing research projects.",
-      "Collaborated with senior research scientists to prototype AI solutions, learning production-grade MLOps practices and enterprise-scale NLP system design under mentorship.",
-      "Environment: Python, Transformers, NLP, REST APIs, Data Preprocessing, Annotation Tools, API Integration."
+      "Developed pipeline architecture for multilingual LLM research across multiple native languages, establishing preprocessing standards and quality benchmarks for production-grade Natural Language Processing (NLP) systems.",
+      "Architected real-time German-to-English transcription system integrating commercial APIs with custom processing layer, achieving significant improvements in contextual understanding for internal research use cases.",
+      "Prototyped semantic search architecture deploying vector-based mechanisms and structured full-stack workflow with REST API integration for a VR research platform.",
+      "Environment: Python, Transformers, Natural Language Processing (NLP), REST APIs, Data Preprocessing, Annotation Tools, API Integration."
     ]
-  }
-  ,
+  },
   {
     id: 3,
-    title: "Cloud Computing Intern",
-    company: "LTI Mindtree",
+    title: "Data Analyst",
+    company: "Logisoft Technologies",
     location: "Hyderabad, India",
-    duration: "Feb 2023 - May 2023",
+    duration: "Dec 2022 – Oct 2023",
     description: [
-      "Global IT services - Cloud Engineering training program.",
-      "Completed intensive AWS cloud architecture training program, building proof-of-concept data processing workflows demonstrating EC2, S3, Lambda, RDS, and VPC integration for scalable batch processing.",
-      "Implemented Infrastructure-as-Code exercises using Terraform to automate resource provisioning, learning enterprise deployment patterns and environment management best practices.",
-      "Containerized sample microservices with Docker and orchestrated clusters via Kubernetes as part of cloud-native architecture training curriculum.",
-      "Shadowed senior cloud architects on client migration projects, learning real-world patterns for resource optimization and cost efficiency in production environments.",
-      "Environment: Python, AWS (EC2, S3, Lambda, RDS, VPC), Terraform, Docker, Kubernetes."
+      "Deployed robust Extract, Transform, Load (ETL) processes using Apache Airflow across Snowflake, DynamoDB, and SQL Server, automating workflows and reducing manual processing time by 75%.",
+      "Orchestrated enterprise-wide data consolidation of 50,000+ records, building a predictive utilization model that reduced unnecessary spending by 18%.",
+      "Led cross-functional analytics initiatives between business units and technical teams, translating requirements into solutions and presenting data insights to C-level executives.",
+      "Environment: Power BI, SQL, Python, Apache Airflow, Snowflake, DynamoDB."
     ]
   }
 ];
@@ -428,12 +410,12 @@ export const education = [
 ];
 
 export const projectCategories = [
-  { id: "all", name: "All Projects", count: 18 },
+  { id: "all", name: "All Projects", count: 17 },
   { id: "generative-ai", name: "Generative AI", count: 3 },
   { id: "nlp-speech", name: "NLP & Speech", count: 5 },
   { id: "machine-learning", name: "Machine Learning", count: 8 },
-  { id: "data-engineering", name: "Data Engineering", count: 7 },
+  { id: "data-engineering", name: "Data Engineering", count: 6 },
   { id: "systems-design", name: "Systems Design", count: 5 },
   { id: "cloud-mlops", name: "Cloud & MLOps", count: 6 },
-  { id: "analytics-bi", name: "Analytics & BI", count: 4 }
+  { id: "analytics-bi", name: "Analytics & BI", count: 3 }
 ];

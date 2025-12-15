@@ -30,6 +30,15 @@
   padding: 0 2rem;
 }
 
+/* Section heading styling for dark background */
+.skills .section-title {
+  color: #ffffff;
+}
+
+.skills .section-divider {
+  background: linear-gradient(90deg, #ffffff, #f39c12);
+}
+
 .skills-content {
   text-align: center;
   max-width: 1000px;

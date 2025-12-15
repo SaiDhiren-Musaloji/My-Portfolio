@@ -8,8 +8,6 @@ const About: React.FC = () => {
 
   return (
     <section id="about" className="about">
-      <div className="about-background"></div>
-      <div className="about-overlay"></div>
       <div className="about-container">
         <div className="section-header">
           <h2 className="section-title">About Me</h2>
@@ -17,14 +15,6 @@ const About: React.FC = () => {
         </div>
         
         <div className="about-content">
-          <div className="about-image">
-            <img 
-              src="/images/pic 2.jpg" 
-              alt="Sai Dhiren Musaloji"
-              className="about-photo"
-            />
-          </div>
-
           <div className="about-text">
             {aboutParagraphs.map((paragraph, index) => (
               <p key={index} className="about-description">
