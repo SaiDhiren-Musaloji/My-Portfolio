@@ -370,7 +370,7 @@ export const experience = [
     title: "Data Analyst",
     company: "Logisoft Technologies",
     location: "Hyderabad, India",
-    duration: "Dec 2022 – Oct 2023",
+    duration: "July 2022 – Oct 2023",
     description: [
       "Deployed robust Extract, Transform, Load (ETL) processes using Apache Airflow across Snowflake, DynamoDB, and SQL Server, automating workflows and reducing manual processing time by 75%.",
       "Orchestrated enterprise-wide data consolidation of 50,000+ records, building a predictive utilization model that reduced unnecessary spending by 18%.",
