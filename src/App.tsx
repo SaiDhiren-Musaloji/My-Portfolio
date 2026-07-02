@@ -3,11 +3,9 @@ import './App.css';
 import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import Hero from './sections/Hero';
-import Experience from './sections/Experience';
-import Education from './sections/Education';
 import Projects from './sections/Projects';
 import Skills from './sections/Skills';
-import Certificates from './sections/Certificates';
+import Career from './sections/Career';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
 
@@ -17,11 +15,9 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Experience />
-        <Education />
         <Projects />
         <Skills />
-        <Certificates />
+        <Career />
         <Contact />
       </main>
       <Footer />

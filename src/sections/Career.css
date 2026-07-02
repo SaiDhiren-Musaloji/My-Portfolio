@@ -1,0 +1,257 @@
+.career-jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.career-job {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg);
+  transition: border-color 0.15s ease;
+}
+
+.career-job.open {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+
+.career-job-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+
+.career-job-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.career-job-period {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.career-job-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.career-job-co {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.career-job-toggle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--muted);
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+}
+
+.career-job-details {
+  list-style: disc;
+  padding: 1rem 1.25rem 1.25rem 2.1rem;
+  margin: 0;
+  border-top: 1px solid var(--border);
+}
+
+.career-job-details li {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--muted);
+  margin-bottom: 0.55rem;
+  padding-left: 0.25rem;
+}
+
+.career-job-details li:last-child {
+  margin-bottom: 0;
+}
+
+.career-job-details li::marker {
+  color: var(--accent);
+}
+
+/* Education */
+.career-edu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.career-edu-item {
+  position: relative;
+  overflow: hidden;
+  padding: 1.15rem 1.25rem;
+  background: linear-gradient(145deg, #0c0a14 0%, #15102a 40%, #0f1729 100%);
+  border: 1px solid rgba(167, 139, 250, 0.15);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.career-edu-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 55% at 85% 15%, rgba(139, 92, 246, 0.16), transparent),
+    radial-gradient(ellipse 55% 45% at 15% 85%, rgba(14, 165, 233, 0.1), transparent);
+  pointer-events: none;
+}
+
+.career-edu-degree {
+  position: relative;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.career-edu-school {
+  position: relative;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.career-edu-meta {
+  position: relative;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.25rem;
+}
+
+/* Certificates */
+.career-certs-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.career-certs-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.career-cert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 1.1rem 0.85rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+  min-width: 0;
+  transition: border-color 0.15s ease;
+}
+
+.career-cert:hover { border-color: var(--accent); }
+
+.career-cert img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
+.career-cert span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Cert modal */
+.cert-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.cert-modal {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  max-width: 560px;
+  width: 100%;
+  position: relative;
+}
+
+.cert-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--muted);
+  line-height: 1;
+}
+
+.cert-modal img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.cert-modal-title {
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+}
+
+.cert-modal-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .career-certs-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .career-edu { grid-template-columns: 1fr; }
+
+  .career-certs-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

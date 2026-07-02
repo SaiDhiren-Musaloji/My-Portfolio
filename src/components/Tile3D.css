@@ -1,0 +1,80 @@
+.tile-3d {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out;
+  cursor: default;
+  height: 100%;
+}
+
+.tile-3d[role='button'],
+.tile-3d.clickable {
+  cursor: pointer;
+}
+
+.tile-3d-surface {
+  position: relative;
+  height: 100%;
+  border-radius: var(--radius-lg, 16px);
+  background: var(--tile-bg, #ffffff);
+  border: 1px solid var(--tile-border, rgba(15, 23, 42, 0.08));
+  overflow: hidden;
+  transform: translateZ(0);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.tile-3d:hover .tile-3d-surface {
+  border-color: var(--tile-border-hover, rgba(14, 165, 233, 0.35));
+  box-shadow:
+    0 4px 6px rgba(15, 23, 42, 0.04),
+    0 20px 50px rgba(14, 165, 233, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.tile-3d-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.tile-3d-shine {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.tile-3d-shadow {
+  position: absolute;
+  inset: 8px -4px -12px;
+  background: rgba(15, 23, 42, 0.08);
+  filter: blur(16px);
+  z-index: -1;
+  border-radius: var(--radius-lg, 16px);
+  transition: opacity 0.25s ease;
+}
+
+.tile-3d:hover .tile-3d-shadow {
+  opacity: 0.7;
+}
+
+/* Dark variant */
+.tile-3d.dark .tile-3d-surface {
+  --tile-bg: rgba(255, 255, 255, 0.04);
+  --tile-border: rgba(255, 255, 255, 0.1);
+  --tile-border-hover: rgba(56, 189, 248, 0.4);
+  backdrop-filter: blur(12px);
+}
+
+.tile-3d.dark:hover .tile-3d-surface {
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.2),
+    0 24px 60px rgba(14, 165, 233, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.tile-3d.dark .tile-3d-shadow {
+  background: rgba(0, 0, 0, 0.3);
+}

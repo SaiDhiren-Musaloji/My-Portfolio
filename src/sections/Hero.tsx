@@ -1,66 +1,82 @@
 import React from 'react';
-import { personalInfo } from '../data/portfolioData';
+import { personalInfo, heroContent } from '../data/portfolioData';
 import './Hero.css';
 
 const Hero: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <section id="hero" className="hero">
-      <div className="hero-background">
-        <div className="hero-overlay"></div>
+      <div className="hero-bg" aria-hidden="true">
+        <div className="hero-aurora hero-aurora--1" />
+        <div className="hero-aurora hero-aurora--2" />
+        <div className="hero-aurora hero-aurora--3" />
       </div>
-      
+
       <div className="hero-container">
-        <div className="hero-content">
-          <div className="hero-text">
-            <h1 className="hero-title">
-              Hi, I'm <span className="highlight">Sai Dhiren</span>
-              <br />
-              <span className="highlight">Musaloji</span>
-            </h1>
-            <h2 className="hero-subtitle">{personalInfo.title}</h2>
-            <p className="hero-description">
-              {personalInfo.about}
+        <div className="hero-layout">
+          <div className="hero-main">
+            <p className="hero-role">
+              <span className="hero-role-dot" aria-hidden="true" />
+              {heroContent.role}
             </p>
-            
-            <div className="hero-buttons">
-              <button 
-                className="btn btn-primary"
+
+            <h1 className="hero-name">{personalInfo.name}</h1>
+            <p className="hero-headline">{heroContent.headline}</p>
+
+            <div className="hero-block">
+              <span className="hero-label">Building now</span>
+              <div className="hero-work-list">
+                {heroContent.currentWork.map((item) => (
+                  <button
+                    key={item.projectId}
+                    type="button"
+                    className="hero-work-item"
+                    onClick={() => scrollToSection('projects')}
+                  >
+                    <span className="hero-work-desc">{item.description}</span>
+                    <span className="hero-work-name">{item.label}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="hero-cta">
+              <button
+                type="button"
+                className="hero-btn-primary"
                 onClick={() => scrollToSection('projects')}
               >
-                View My Work
+                View Projects
               </button>
-              <button 
-                className="btn btn-secondary"
+              <button
+                type="button"
+                className="hero-btn-link"
                 onClick={() => scrollToSection('contact')}
               >
-                Get In Touch
+                Get in touch
               </button>
             </div>
           </div>
-          
-          <div className="hero-image">
-            <div className="profile-image-container">
-              <img 
-                src="/images/profile.png" 
+
+          <div className="hero-visual">
+            <div className="hero-photo-frame">
+              <div className="hero-blob hero-blob--1" aria-hidden="true" />
+              <div className="hero-blob hero-blob--2" aria-hidden="true" />
+              <div className="hero-blob hero-blob--3" aria-hidden="true" />
+              <img
+                src="/images/profile.png"
                 alt={personalInfo.name}
-                className="profile-image"
+                className="hero-photo"
               />
-              <div className="profile-image-border"></div>
             </div>
           </div>
         </div>
-        
-
       </div>
     </section>
   );
 };
 
-export default Hero; 
+export default Hero;

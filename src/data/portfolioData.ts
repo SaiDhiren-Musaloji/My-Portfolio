@@ -2,6 +2,54 @@ import { Project, Certificate, Skill, ContactInfo } from '../types';
 
 export const projects: Project[] = [
   {
+    id: 19,
+    title: "Agentic Refill Payment Bot",
+    description: "• Telecom billing workflows require conversational AI that can guide users through multi-stage payments while maintaining strict guardrails on financial transactions\n\n• Built an agentic refill assistant blending LLM-driven conversation with deterministic payment stages — balance check, method selection, confirmation, and receipt — with MCP-style tool gateway, bill analysis, and plan recommendations backed by PostgreSQL and OpenTelemetry.",
+    image: "/images/projects/placeholder.png",
+    technologies: ["Python", "FastAPI", "NVIDIA Nemotron", "PostgreSQL", "Redis", "OpenTelemetry", "MCP", "Docker", "Agentic AI"],
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
+    category: "Agentic AI",
+    primaryCategory: "agentic-ai",
+    categories: ["agentic-ai", "systems-design", "generative-ai"],
+    detailedDescription: "Built an agentic telecom refill and billing assistant that blends LLM-driven conversation with deterministic payment guardrails. The system orchestrates multi-stage payment journeys (balance check → payment method → confirmation → receipt), exposes MCP-style tools for bill analysis and plan recommendations, and includes a full web console with analytics and token usage tracking — all backed by PostgreSQL and instrumented with OpenTelemetry."
+  },
+  {
+    id: 20,
+    title: "Engineering & Deployment Adapters",
+    description: "• Enterprise AI platforms need vendor-agnostic layers that normalize prompts, enforce SLAs, and route across multiple LLM providers without lock-in\n\n• Designed a two-layer adapter framework: Engineering Adapter for prompt normalization and tool schema mapping; Deployment Adapter for auth injection, cost governance, SLA enforcement, and multi-provider failover with persistent session memory and a React live demo UI.",
+    image: "/images/projects/placeholder.png",
+    technologies: ["Python", "FastAPI", "React", "TypeScript", "Groq", "OpenAI", "Anthropic", "Gemini", "System Design"],
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
+    category: "System Design",
+    primaryCategory: "systems-design",
+    categories: ["agentic-ai", "systems-design"],
+    detailedDescription: "Designed a vendor-agnostic AI adapter framework with separate engineering and deployment layers. The engineering adapter normalizes prompts and maps tool schemas across providers; the deployment adapter handles auth, cost caps, SLA enforcement, and failover across up to 16 model candidates. Includes a React live demo UI and multi-provider routing with persistent session memory."
+  },
+  {
+    id: 21,
+    title: "Context Hub — Knowledge Graph for Coding Agents",
+    description: "• Large codebases overwhelm LLM context windows — agents need precise, token-efficient retrieval of only the most relevant code and documentation\n\n• Built a knowledge-graph context hub that indexes production repos into typed graphs and serves context via MCP tools using BM25 anchoring and BFS graph traversal, dramatically reducing token usage while improving agent accuracy on enterprise codebases.",
+    image: "/images/projects/placeholder.png",
+    technologies: ["Python", "MCP", "BM25", "Knowledge Graphs", "Neo4j", "AST Parsing", "RAG", "Agentic AI"],
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
+    category: "Agentic AI",
+    primaryCategory: "agentic-ai",
+    categories: ["agentic-ai", "systems-design"],
+    detailedDescription: "Built a knowledge-graph context hub that indexes production codebases into typed graphs and serves token-efficient context to coding agents via MCP. Uses BM25 anchoring and graph traversal to retrieve only the most relevant code and documentation, with optional Neo4j export and multi-language AST support."
+  },
+  {
+    id: 22,
+    title: "MakersLab AI Gateway",
+    description: "• On-premise LLM inference on NVIDIA DGX hardware needs secure, OpenAI-compatible APIs with session management and operational visibility\n\n• Architected a full-stack local LLM platform featuring an authenticated FastAPI gateway, React 19 chat UI, and ops monitor — supporting TensorRT-LLM, vLLM, and Transformers backends with streaming chat, document attachments, and production deployment via Cloudflare Tunnel.",
+    image: "/images/projects/placeholder.png",
+    technologies: ["Python", "FastAPI", "React 19", "PostgreSQL", "TensorRT-LLM", "vLLM", "NVIDIA DGX", "Docker", "System Design"],
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
+    category: "System Design",
+    primaryCategory: "systems-design",
+    categories: ["agentic-ai", "systems-design", "cloud-mlops"],
+    detailedDescription: "Architected a full-stack local LLM platform for NVIDIA DGX Spark hardware, featuring an authenticated FastAPI gateway, React 19 chat UI, and operational monitor. Supports multiple inference backends with OpenAI-compatible APIs, session management, streaming chat, document attachments, and production deployment via Cloudflare Tunnel and systemd."
+  },
+  {
     id: 1,
     title: "AI Research Assistant with Retrieval-Augmented Generation",
     description: "• Traditional research assistants lack contextual understanding and fail to provide accurate, up-to-date information from multiple sources with proper citation and verification\n\n• Developed intelligent research assistant integrating Google Gemini 1.5 Flash API with RAG, building custom vector database using scikit-learn's NearestNeighbors, implementing newspaper3k for article extraction, and engineering end-to-end workflow with multi-model NLP processing (BART, BERT, DistilBERT) for contextually-grounded responses.",
@@ -329,53 +377,60 @@ export const contactInfo: ContactInfo = {
 
 export const personalInfo = {
   name: "Sai Dhiren Musaloji",
-  title: "Data Engineer & AI Engineer",
+  title: "AI Engineer · Agentic Systems · System Design",
   location: "Dallas, TX",
   education: "MS in Data Science - New Jersey Institute of Technology (GPA: 3.85/4.0)",
-  experience: "Data Engineer at TAWIN Solutions LLC",
-  about: "Data Engineer and AI Engineer with expertise in statistical analysis, machine learning, and cloud computing. Currently building data-driven recommendation systems and analytics platforms at TAWIN Solutions. MS in Data Science from NJIT with hands-on experience in multilingual LLM research, real-time data pipelines, and enterprise analytics solutions.",
-  aboutDetailed: "I'm a passionate Data Engineer and AI Engineer with a Master's in Data Science from New Jersey Institute of Technology, where I graduated with a 3.85 GPA. My journey in data science combines rigorous academic training with hands-on industry experience, enabling me to bridge the gap between complex analytical problems and practical, impactful solutions.\n\nCurrently, I'm working as a Data Engineer at TAWIN Solutions LLC in Dallas, where I lead statistical analysis on user preference patterns and build comprehensive data pipelines that power personalized recommendation systems. My work involves integrating real-time APIs, performing sentiment analysis, and developing interactive dashboards that drive data-driven decision-making. I've successfully improved recommendation click-through rates by 23% and achieved 99.2% data accuracy across integrated sources.\n\nPreviously, I contributed to cutting-edge AI research at Tech Mahindra's Makers Lab, where I managed data pipelines for a major multilingual LLM research project spanning 15+ languages. I engineered real-time transcription systems, prototyped semantic search architectures, and built full-stack data flows for VR research platforms. This experience gave me deep exposure to production-grade MLOps and enterprise NLP system design.\n\nMy technical expertise spans machine learning, deep learning, cloud computing, and data engineering. I'm proficient in Python, SQL, Azure, Power BI, and various ML frameworks. I've built everything from RAG-powered research assistants to adversarial attack systems, from transformer-based models to distributed data processing pipelines.\n\nWhat sets me apart is my ability to translate complex analytical insights into actionable business strategies. I thrive in collaborative environments where I can work with cross-functional teams to solve challenging problems. Whether it's optimizing recommendation algorithms, building predictive models, or architecting scalable data solutions, I'm driven by the impact that data-driven decisions can have on business outcomes and user experiences.\n\nI'm always eager to take on new challenges and continue learning. My portfolio reflects my commitment to continuous growth—from understanding AI vulnerabilities through adversarial attacks to building enterprise-grade analytics platforms. I believe in the power of data to transform businesses and improve lives, and I'm excited to contribute to innovative projects that push the boundaries of what's possible with AI and analytics."
+  experience: "AI Engineer at Tech Mahindra MakersLab",
+  about: "AI Engineer building agentic systems, LLM platforms, and production-grade AI infrastructure at Tech Mahindra MakersLab in Dallas. I design multi-agent workflows, vendor-agnostic adapter frameworks, knowledge-graph context systems, and on-premise LLM gateways. MS in Data Science from NJIT with deep expertise in system design, RAG, and enterprise AI deployment.",
+  aboutDetailed: "I'm an AI Engineer at Tech Mahindra MakersLab in Dallas, where I build production agentic AI systems — from conversational payment agents and vendor-agnostic LLM adapter frameworks to knowledge-graph context hubs and on-premise LLM gateways on NVIDIA DGX hardware.\n\nMy current work spans the full AI stack: designing multi-stage agent orchestration with deterministic guardrails, building MCP-style tool gateways, architecting token-efficient knowledge retrieval for coding agents, and deploying OpenAI-compatible inference platforms with session management, streaming, and operational monitoring.\n\nPreviously, I worked as an AI/ML Engineer at TAWIN Solutions, building a personalized restaurant recommendation engine with collaborative and content-based filtering, Azure AI integration, and behavioral feature engineering. I also interned at Tech Mahindra's Makers Lab in Pune on Project Indus (India's first multilingual LLM) and real-time multilingual transcription pipelines.\n\nI hold an MS in Data Science from NJIT (3.85 GPA) and combine rigorous ML foundations with hands-on system design. My portfolio spans agentic AI platforms, distributed systems, RAG pipelines, and transformer-based models — reflecting a focus on building AI that works reliably at enterprise scale."
 };
 
 export const experience = [
   {
     id: 1,
-    title: "Data Engineer",
-    company: "TAWIN Solutions",
+    title: "AI Engineer",
+    company: "Tech Mahindra, MakersLab",
     location: "Dallas, TX",
-    duration: "May 2025 – Present",
+    duration: "March 2026 – Present",
     description: [
-      "Designed, implemented, and optimized scalable ETL pipelines using SSIS and Python to facilitate the transformation and linkage of data across multiple sources, automating data workflows and establishing data validation frameworks.",
-      "Developed and optimized complex SQL queries and stored procedures in MS SQL Server (Azure and On-Prem), leveraging Window Functions and Aggregate Functions for efficient data joining, filtering, and aggregation.",
-      "Managed data quality and standardization efforts by conducting code reviews and ensuring 99% data accuracy across enterprise data warehouse solutions.",
-      "Translated business requirements into technical BI solutions, designing robust data models supporting analytics and executive reporting needs via Power BI dashboards.",
-      "Environment: MS SQL Server, Azure, SSIS, Power BI, Data Warehousing, ETL, DAX."
+      "Built an agentic telecom refill payment bot with LLM-driven conversation and deterministic payment guardrails — multi-stage orchestration, MCP-style tool gateway, bill analysis, and OpenTelemetry instrumentation.",
+      "Designed a vendor-agnostic Engineering & Deployment Adapter framework normalizing prompts and tool schemas across Groq, OpenAI, Anthropic, and Gemini with cost governance, SLA enforcement, and multi-provider failover.",
+      "Developed Context Hub, a knowledge-graph context retrieval system for coding agents using BM25 anchoring and graph traversal via MCP, reducing LLM token usage on large enterprise codebases.",
+      "Architected MakersLab AI Gateway — an authenticated OpenAI-compatible platform for on-premise LLM inference on NVIDIA DGX hardware with React chat UI, streaming, session management, and ops monitoring.",
+      "Environment: Python, FastAPI, React, PostgreSQL, NVIDIA Nemotron, TensorRT-LLM, MCP, Docker, OpenTelemetry, System Design."
     ]
   },
   {
     id: 2,
-    title: "AI Research Data Analyst Intern",
-    company: "Tech Mahindra, Makers Lab R&D",
-    location: "Pune, India",
-    duration: "Oct 2023 – Jan 2024",
+    title: "AI/ML Engineer",
+    company: "TAWIN Solutions LLC",
+    location: "USA",
+    duration: "Sept 2025 – Feb 2026",
     description: [
-      "Developed pipeline architecture for multilingual LLM research across multiple native languages, establishing preprocessing standards and quality benchmarks for production-grade Natural Language Processing (NLP) systems.",
-      "Architected real-time German-to-English transcription system integrating commercial APIs with custom processing layer, achieving significant improvements in contextual understanding for internal research use cases.",
-      "Prototyped semantic search architecture deploying vector-based mechanisms and structured full-stack workflow with REST API integration for a VR research platform.",
-      "Environment: Python, Transformers, Natural Language Processing (NLP), REST APIs, Data Preprocessing, Annotation Tools, API Integration."
+      "Designed a personalized restaurant recommendation engine leveraging collaborative and content-based filtering techniques, incorporating user preference history, geolocation signals, and contextual features to improve suggestion relevance.",
+      "Integrated Azure AI services with a structured logging pipeline to capture real-time user interactions and nearby venue data, enabling continuous feedback loops for model retraining and preference drift detection.",
+      "Worked on feature engineering from behavioral data — translating raw choice history into embeddings and structured signals used downstream by the recommendation model."
     ]
   },
   {
     id: 3,
-    title: "Data Analyst",
-    company: "Logisoft Technologies",
-    location: "Hyderabad, India",
-    duration: "July 2022 – Oct 2023",
+    title: "AI/ML Intern",
+    company: "Tech Mahindra, Makers Lab",
+    location: "Pune, India",
+    duration: "Oct 2023 – Dec 2023",
     description: [
-      "Deployed robust Extract, Transform, Load (ETL) processes using Apache Airflow across Snowflake, DynamoDB, and SQL Server, automating workflows and reducing manual processing time by 75%.",
-      "Orchestrated enterprise-wide data consolidation of 50,000+ records, building a predictive utilization model that reduced unnecessary spending by 18%.",
-      "Led cross-functional analytics initiatives between business units and technical teams, translating requirements into solutions and presenting data insights to C-level executives.",
-      "Environment: Power BI, SQL, Python, Apache Airflow, Snowflake, DynamoDB."
+      "Contributed to Project Indus, India's first multilingual LLM targeting native Indian languages — involved in the data engineering pipeline (collection, cleaning, and formatting of low-resource language corpora) and participated in transformer model architecture work during pre-training.",
+      "Built a real-time multilingual transcription pipeline for German-to-English meeting audio using Python-based ASR and NLP tooling, focusing on low-latency processing and accurate handling of domain-specific vocabulary."
+    ]
+  },
+  {
+    id: 4,
+    title: "Cloud Engineering Intern",
+    company: "LTI Mindtree",
+    location: "India",
+    duration: "Feb 2023 – Apr 2023",
+    description: [
+      "Gained practical experience in cloud infrastructure provisioning across AWS (EC2, S3, IAM, VPC), Azure, and GCP using Terraform — writing modular IaC configurations to automate environment setup and ensure reproducibility across deployment targets."
     ]
   }
 ];
@@ -410,12 +465,102 @@ export const education = [
 ];
 
 export const projectCategories = [
-  { id: "all", name: "All Projects", count: 17 },
-  { id: "generative-ai", name: "Generative AI", count: 3 },
-  { id: "nlp-speech", name: "NLP & Speech", count: 5 },
-  { id: "machine-learning", name: "Machine Learning", count: 8 },
-  { id: "data-engineering", name: "Data Engineering", count: 6 },
-  { id: "systems-design", name: "Systems Design", count: 5 },
-  { id: "cloud-mlops", name: "Cloud & MLOps", count: 6 },
-  { id: "analytics-bi", name: "Analytics & BI", count: 3 }
+  { id: "all", name: "All Projects", count: 21, description: "Complete portfolio", icon: "◈" },
+  { id: "agentic-ai", name: "Agentic AI", count: 4, description: "Multi-agent systems, MCP tools, LLM orchestration", icon: "🤖" },
+  { id: "systems-design", name: "Systems Design", count: 9, description: "Distributed architecture, adapters, gateways", icon: "⬡" },
+  { id: "generative-ai", name: "Generative AI", count: 4, description: "RAG, transformers, generative models", icon: "✦" },
+  { id: "cloud-mlops", name: "Cloud & MLOps", count: 7, description: "AWS, Docker, inference pipelines", icon: "☁" },
+  { id: "nlp-speech", name: "NLP & Speech", count: 5, description: "Speech, OCR, translation systems", icon: "◎" },
+  { id: "machine-learning", name: "Machine Learning", count: 8, description: "Deep learning, RL, GNN models", icon: "◉" },
+  { id: "data-engineering", name: "Data Engineering", count: 6, description: "ETL, Spark, data pipelines", icon: "⇄" },
+  { id: "analytics-bi", name: "Analytics & BI", count: 3, description: "Dashboards, forecasting, BI", icon: "▣" }
+];
+
+export const featuredProjectIds = [19, 20, 21, 22];
+
+export const heroContent = {
+  role: "AI Engineer · Tech Mahindra MakersLab · Dallas",
+  headline: "I build agentic AI systems.",
+  currentWork: [
+    { label: "Refill Bot", description: "MCP orchestration of agents", projectId: 19 },
+    { label: "Engineering Adapter", description: "Research solutions for token consumption", projectId: 20 },
+    { label: "Context Hub", description: "Knowledge-graph context for coding agents", projectId: 21 },
+    { label: "AI Gateway", description: "Production MLOps & model serving", projectId: 22 },
+  ],
+};
+
+export const skillDomains = [
+  {
+    id: "agentic-ai",
+    title: "Agentic AI & LLMs",
+    description: "Production multi-agent systems with tool use, guardrails, and observability.",
+    size: "large" as const,
+    skills: [
+      { name: "Agent Orchestration", proficiency: 92, level: "Expert" as const, context: "Multi-stage refill bot with deterministic payment guardrails" },
+      { name: "MCP Tool Design", proficiency: 90, level: "Expert" as const, context: "Context Hub & refill bot tool gateways" },
+      { name: "RAG Pipelines", proficiency: 88, level: "Advanced" as const, context: "BM25 anchoring + graph traversal retrieval" },
+      { name: "LLM Integration", proficiency: 90, level: "Expert" as const, context: "Nemotron, GPT-OSS, multi-provider routing" },
+      { name: "Prompt Engineering", proficiency: 85, level: "Advanced" as const, context: "Adapter normalization across 4+ providers" },
+    ],
+  },
+  {
+    id: "system-design",
+    title: "System Design",
+    description: "Vendor-agnostic platforms, gateways, and distributed service architecture.",
+    size: "medium" as const,
+    skills: [
+      { name: "API Gateway Design", proficiency: 90, level: "Expert" as const, context: "OpenAI-compatible proxy with auth & rate limiting" },
+      { name: "Adapter Patterns", proficiency: 88, level: "Advanced" as const, context: "Engineering + deployment adapter framework" },
+      { name: "Microservices", proficiency: 82, level: "Advanced" as const, context: "FastAPI services with Docker Compose" },
+      { name: "Event-Driven Arch", proficiency: 80, level: "Advanced" as const, context: "Queue-based ride-matching platform" },
+    ],
+  },
+  {
+    id: "ml-ai",
+    title: "Machine Learning",
+    description: "Deep learning, transformers, and production model deployment.",
+    size: "medium" as const,
+    skills: [
+      { name: "PyTorch", proficiency: 88, level: "Advanced" as const, context: "Transformers, GNNs, adversarial ML research" },
+      { name: "Transformers", proficiency: 85, level: "Advanced" as const, context: "BERT, NMT, speaker classification" },
+      { name: "Model Deployment", proficiency: 82, level: "Advanced" as const, context: "TensorRT-LLM, vLLM on NVIDIA DGX" },
+      { name: "NLP Pipelines", proficiency: 80, level: "Advanced" as const, context: "Multilingual LLM research at MakersLab" },
+    ],
+  },
+  {
+    id: "backend",
+    title: "Backend & APIs",
+    description: "High-throughput Python backends and full-stack integration.",
+    size: "small" as const,
+    skills: [
+      { name: "Python / FastAPI", proficiency: 92, level: "Expert" as const, context: "Primary stack across all MakersLab projects" },
+      { name: "PostgreSQL", proficiency: 85, level: "Advanced" as const, context: "Session, conversation, and billing persistence" },
+      { name: "React / TypeScript", proficiency: 80, level: "Advanced" as const, context: "Gateway chat UI & adapter demo" },
+      { name: "Redis", proficiency: 78, level: "Proficient" as const, context: "Caching, locks, geo-indexing" },
+    ],
+  },
+  {
+    id: "cloud-mlops",
+    title: "Cloud & MLOps",
+    description: "Containerized deployment, observability, and infrastructure.",
+    size: "small" as const,
+    skills: [
+      { name: "Docker", proficiency: 88, level: "Advanced" as const, context: "Multi-service Compose stacks" },
+      { name: "OpenTelemetry", proficiency: 82, level: "Advanced" as const, context: "Agent metrics & token tracking" },
+      { name: "AWS", proficiency: 80, level: "Advanced" as const, context: "EMR, SQS, Rekognition pipelines" },
+      { name: "CI / Production Ops", proficiency: 78, level: "Proficient" as const, context: "systemd, Cloudflare Tunnel, Caddy" },
+    ],
+  },
+  {
+    id: "data-engineering",
+    title: "Data Engineering",
+    description: "ETL pipelines, warehousing, and analytics infrastructure.",
+    size: "small" as const,
+    skills: [
+      { name: "SQL / Warehousing", proficiency: 85, level: "Advanced" as const, context: "MS SQL Server, Snowflake, 99% accuracy" },
+      { name: "Apache Spark", proficiency: 78, level: "Proficient" as const, context: "EMR distributed ML pipelines" },
+      { name: "Apache Airflow", proficiency: 75, level: "Proficient" as const, context: "Multi-source ETL orchestration" },
+      { name: "Power BI", proficiency: 80, level: "Advanced" as const, context: "Executive dashboards & DAX models" },
+    ],
+  },
 ];

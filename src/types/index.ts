@@ -66,4 +66,21 @@ export interface ProjectCategory {
   id: string;
   name: string;
   count: number;
+  description?: string;
+  icon?: string;
+}
+
+export interface SkillEntry {
+  name: string;
+  proficiency: number;
+  level: 'Expert' | 'Advanced' | 'Proficient';
+  context: string;
+}
+
+export interface SkillDomain {
+  id: string;
+  title: string;
+  description: string;
+  size: 'large' | 'medium' | 'small';
+  skills: SkillEntry[];
 } 

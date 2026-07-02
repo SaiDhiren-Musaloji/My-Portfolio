@@ -112,26 +112,6 @@
   align-self: flex-start;
 }
 
-.modal-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-.meta-item {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  color: #666;
-  font-size: 0.9rem;
-}
-
-.meta-item svg {
-  width: 16px;
-  height: 16px;
-}
-
 .modal-body {
   display: flex;
   flex-direction: column;
@@ -159,58 +139,6 @@
   color: #555;
   line-height: 1.6;
   margin: 0;
-}
-
-.feature-list,
-.challenge-list,
-.solution-list,
-.result-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.feature-list li,
-.challenge-list li,
-.solution-list li,
-.result-list li {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 0.8rem;
-  line-height: 1.6;
-  color: #555;
-}
-
-.feature-list li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #28a745;
-  font-weight: bold;
-}
-
-.challenge-list li::before {
-  content: '⚠';
-  position: absolute;
-  left: 0;
-  color: #ffc107;
-  font-weight: bold;
-}
-
-.solution-list li::before {
-  content: '💡';
-  position: absolute;
-  left: 0;
-  color: #17a2b8;
-  font-weight: bold;
-}
-
-.result-list li::before {
-  content: '📈';
-  position: absolute;
-  left: 0;
-  color: #28a745;
-  font-weight: bold;
 }
 
 .modal-technologies {
@@ -301,11 +229,6 @@
     font-size: 1.5rem;
   }
 
-  .modal-meta {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
   .modal-links {
     flex-direction: column;
   }
@@ -331,4 +254,4 @@
   .modal-section h3 {
     font-size: 1.1rem;
   }
-} 
+}
