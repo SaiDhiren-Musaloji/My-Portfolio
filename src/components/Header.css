@@ -176,5 +176,13 @@
 
   .site-menu-btn { display: flex; }
 
-  .site-resume { display: none; }
+  .site-header-end {
+    flex-shrink: 0;
+    gap: 0.25rem;
+  }
+
+  .site-resume {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.65rem;
+  }
 }
