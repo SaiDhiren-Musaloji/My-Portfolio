@@ -97,6 +97,16 @@
   padding-top: 2rem;
 }
 
+.work-archive-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
 .work-filters {
   display: flex;
   flex-wrap: wrap;
@@ -188,15 +198,37 @@
     grid-row: auto;
     min-height: auto;
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .work-card--4 .work-card-arrow {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    margin-left: 0;
   }
 
   .work-row {
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
+    gap: 0.35rem 0.75rem;
+    padding: 0.85rem 0;
+  }
+
+  .work-row-title {
+    grid-column: 1;
+    padding-right: 0.5rem;
+  }
+
+  .work-row-arrow {
+    grid-row: 1;
+    grid-column: 2;
+    align-self: start;
   }
 
   .work-row-tags {
     grid-column: 1 / -1;
     max-width: 100%;
+    white-space: normal;
   }
 }

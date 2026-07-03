@@ -18,6 +18,8 @@
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
   transition: color 0.15s ease;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .contact-big-link:hover { color: var(--accent); }
@@ -93,5 +95,10 @@
   .contact-layout {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .contact-form button {
+    align-self: stretch;
+    width: 100%;
   }
 }

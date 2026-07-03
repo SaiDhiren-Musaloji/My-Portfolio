@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -29,6 +30,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  overflow-x: clip;
 }
 
 .App {
@@ -61,6 +63,6 @@ main {
   }
 
   .page-wrap {
-    padding: 0 1.25rem;
+    padding: 0 1rem;
   }
 }

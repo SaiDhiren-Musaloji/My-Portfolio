@@ -13,6 +13,7 @@ const Career: React.FC = () => {
         <SectionLabel
           index="03"
           title="Career"
+          singleLine
           description="Where I've shipped — from enterprise data to production agentic AI."
         />
 

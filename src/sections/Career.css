@@ -251,7 +251,34 @@
 @media (max-width: 640px) {
   .career-edu { grid-template-columns: 1fr; }
 
+  .career-job-header {
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  .career-job-left {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .career-job-title {
+    font-size: 0.95rem;
+  }
+
+  .career-job-details {
+    padding: 0.75rem 1rem 1rem 1.5rem;
+  }
+
   .career-certs-row {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .career-cert {
+    padding: 0.85rem 0.5rem;
+  }
+
+  .career-cert span {
+    font-size: 0.72rem;
   }
 }

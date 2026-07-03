@@ -33,6 +33,31 @@
   max-width: 480px;
 }
 
+.section-label-desc--single-line {
+  white-space: nowrap;
+  max-width: none;
+}
+
+@media (max-width: 640px) {
+  .section-label {
+    margin-bottom: 2rem;
+  }
+
+  .section-label-top {
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+  }
+
+  .section-label-desc {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  .section-label-desc--single-line {
+    font-size: clamp(0.68rem, 2.5vw, 0.9rem);
+  }
+}
+
 .section-label--light .section-label-index {
   color: #a78bfa;
 }

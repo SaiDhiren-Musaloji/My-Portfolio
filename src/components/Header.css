@@ -144,6 +144,13 @@
 .site-header:not(.on-hero) .site-menu-btn span { background: var(--text); }
 
 @media (max-width: 600px) {
+  .site-header-pill {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .site-nav {
     display: none;
     position: absolute;
@@ -159,8 +166,6 @@
   }
 
   .site-nav.open { display: flex; }
-
-  .site-header-pill { position: relative; max-width: 100%; }
 
   .site-nav button {
     width: 100%;

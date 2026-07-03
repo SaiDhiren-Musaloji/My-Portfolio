@@ -42,6 +42,7 @@ const Projects: React.FC = () => {
         <SectionLabel
           index="01"
           title="Work"
+          singleLine
           description="Production systems at MakersLab, plus research and engineering projects."
         />
 
@@ -71,6 +72,7 @@ const Projects: React.FC = () => {
 
         {/* Archive */}
         <div className="work-archive">
+          <span className="work-archive-label">Other</span>
           <div className="work-filters">
             <button
               type="button"
