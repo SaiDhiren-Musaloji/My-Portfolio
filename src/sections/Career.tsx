@@ -14,7 +14,7 @@ const Career: React.FC = () => {
           index="03"
           title="Career"
           singleLine
-          description="Where I've shipped — from enterprise data to production agentic AI."
+          description="Where I've built and shipped AI systems."
         />
 
         {/* Experience timeline */}

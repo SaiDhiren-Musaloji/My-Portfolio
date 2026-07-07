@@ -10,7 +10,7 @@ const Skills: React.FC = () => (
       <SectionLabel
         index="02"
         title="Stack"
-        description="What I reach for when building production AI systems."
+        description="Core tools for building and shipping AI systems."
         light
       />
 

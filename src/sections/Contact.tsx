@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
         <SectionLabel
           index="04"
           title="Contact"
-          description="Open to AI engineering roles, collaborations, and interesting problems."
+          description="Open to roles, collaborations, and hard problems."
         />
 
         <div className="contact-layout">

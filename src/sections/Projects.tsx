@@ -9,7 +9,9 @@ const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const featured = projects.filter((p) => featuredProjectIds.includes(p.id));
+  const featured = featuredProjectIds
+    .map((id) => projects.find((p) => p.id === id))
+    .filter((p): p is (typeof projects)[number] => Boolean(p));
 
   const matchesCategory = (catId: string, p: typeof projects[number]) => {
     if (catId === 'all') return true;
@@ -43,7 +45,7 @@ const Projects: React.FC = () => {
           index="01"
           title="Work"
           singleLine
-          description="Production systems at MakersLab, plus research and engineering projects."
+          description="Production agent systems and engineering projects."
         />
 
         {/* Featured row */}

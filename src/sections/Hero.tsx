@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
               <div className="hero-work-list">
                 {heroContent.currentWork.map((item) => (
                   <button
-                    key={item.projectId}
+                    key={item.label}
                     type="button"
                     className="hero-work-item"
                     onClick={() => scrollToSection('projects')}

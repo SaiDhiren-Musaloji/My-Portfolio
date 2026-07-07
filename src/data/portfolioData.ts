@@ -2,16 +2,28 @@ import { Project, Certificate, Skill, ContactInfo } from '../types';
 
 export const projects: Project[] = [
   {
+    id: 23,
+    title: "MCP Agent Platform — Web UI & CLI",
+    description: "• Production agents need real tools — file I/O, search, sandboxed execution — accessible from both a browser and the terminal\n\n• Built a homegrown MCP-based agent framework with a tool suite (read, write, grep, OS-level sandboxed execution) powering a production web UI (React, Next.js, TypeScript — auth, chat history, file attachments) and a CLI agent, both able to scaffold and modify full projects autonomously.",
+    image: "/images/projects/placeholder.png",
+    technologies: ["Python", "MCP", "React", "Next.js", "TypeScript", "FastAPI", "Agentic AI"],
+    githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
+    category: "Agentic AI",
+    primaryCategory: "agentic-ai",
+    categories: ["agentic-ai", "systems-design"],
+    detailedDescription: "Built a homegrown MCP-based agent framework with a tool suite (read, write, grep, OS-level sandboxed execution, and more) powering a production web UI (React, Next.js, TypeScript — customer auth, persistent chat history, file attachments) and a CLI agent, both able to scaffold and modify full projects autonomously."
+  },
+  {
     id: 19,
     title: "Agentic Refill Payment Bot",
-    description: "• Telecom billing workflows require conversational AI that can guide users through multi-stage payments while maintaining strict guardrails on financial transactions\n\n• Built an agentic refill assistant blending LLM-driven conversation with deterministic payment stages — balance check, method selection, confirmation, and receipt — with MCP-style tool gateway, bill analysis, and plan recommendations backed by PostgreSQL and OpenTelemetry.",
+    description: "• Billing flows need multi-step agent journeys with auditable tool calls\n\n• Built Refill — a multi-agent platform on FastAPI and PostgreSQL with stage-aware billing journeys, MCP-style tool gateway, and full tool-call traceability.",
     image: "/images/projects/placeholder.png",
     technologies: ["Python", "FastAPI", "NVIDIA Nemotron", "PostgreSQL", "Redis", "OpenTelemetry", "MCP", "Docker", "Agentic AI"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Agentic AI",
     primaryCategory: "agentic-ai",
     categories: ["agentic-ai", "systems-design", "generative-ai"],
-    detailedDescription: "Built an agentic telecom refill and billing assistant that blends LLM-driven conversation with deterministic payment guardrails. The system orchestrates multi-stage payment journeys (balance check → payment method → confirmation → receipt), exposes MCP-style tools for bill analysis and plan recommendations, and includes a full web console with analytics and token usage tracking — all backed by PostgreSQL and instrumented with OpenTelemetry."
+    detailedDescription: "Architected a multi-agent conversational platform (Refill) on FastAPI and PostgreSQL: stage-aware billing/refill journeys, multi-agent orchestration, and a RESTful MCP-style tool gateway (registered tools, invoke/audit path, conversation audit tables) with clear API contracts and full tool-call traceability."
   },
   {
     id: 20,
@@ -28,26 +40,26 @@ export const projects: Project[] = [
   {
     id: 21,
     title: "Context Hub — Knowledge Graph for Coding Agents",
-    description: "• Large codebases overwhelm LLM context windows — agents need precise, token-efficient retrieval of only the most relevant code and documentation\n\n• Built a knowledge-graph context hub that indexes production repos into typed graphs and serves context via MCP tools using BM25 anchoring and BFS graph traversal, dramatically reducing token usage while improving agent accuracy on enterprise codebases.",
+    description: "• Chunk-based RAG sends too much irrelevant code into agent context windows\n\n• Built Context Hub — a knowledge-graph retrieval layer that indexes repos into typed graphs and fetches only relevant files via BM25 + graph traversal, cutting tokens per query from ~5–15k to ~1.5–4k. Exposed via MCP to Cursor and Claude Desktop.",
     image: "/images/projects/placeholder.png",
     technologies: ["Python", "MCP", "BM25", "Knowledge Graphs", "Neo4j", "AST Parsing", "RAG", "Agentic AI"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "Agentic AI",
     primaryCategory: "agentic-ai",
     categories: ["agentic-ai", "systems-design"],
-    detailedDescription: "Built a knowledge-graph context hub that indexes production codebases into typed graphs and serves token-efficient context to coding agents via MCP. Uses BM25 anchoring and graph traversal to retrieve only the most relevant code and documentation, with optional Neo4j export and multi-language AST support."
+    detailedDescription: "Created Context Hub, a token-efficient knowledge-graph retrieval layer for coding agents: indexed repositories once into a typed graph with code parsing for structure and dependency edges, and project docs (BRDs, TDDs, OpenAPI specs) for meaning — instead of embedding and chunking everything into a vector store. Engineered the retrieval engine anchoring on BM25 and graph traversal to fetch only relevant files per prompt, cutting tokens per query from ~5–15k (chunk-based RAG) to ~1.5–4k and 2–5 tool calls down to one; exposed via an MCP server to agents like Cursor and Claude Desktop."
   },
   {
     id: 22,
-    title: "MakersLab AI Gateway",
-    description: "• On-premise LLM inference on NVIDIA DGX hardware needs secure, OpenAI-compatible APIs with session management and operational visibility\n\n• Architected a full-stack local LLM platform featuring an authenticated FastAPI gateway, React 19 chat UI, and ops monitor — supporting TensorRT-LLM, vLLM, and Transformers backends with streaming chat, document attachments, and production deployment via Cloudflare Tunnel.",
+    title: "Private LLM Serving API",
+    description: "• Internal tools shouldn't route proprietary prompts through public model APIs\n\n• Served open-weight models on NVIDIA GPUs with vLLM, TensorRT-LLM, and Triton, then wrapped them in an internal FastAPI gateway — one authenticated endpoint for every MakersLab project to call.",
     image: "/images/projects/placeholder.png",
-    technologies: ["Python", "FastAPI", "React 19", "PostgreSQL", "TensorRT-LLM", "vLLM", "NVIDIA DGX", "Docker", "System Design"],
+    technologies: ["Python", "FastAPI", "vLLM", "TensorRT-LLM", "Triton Inference Server", "NVIDIA GPU", "Docker", "System Design"],
     githubUrl: "https://github.com/SaiDhiren-Musaloji?tab=repositories",
     category: "System Design",
     primaryCategory: "systems-design",
     categories: ["agentic-ai", "systems-design", "cloud-mlops"],
-    detailedDescription: "Architected a full-stack local LLM platform for NVIDIA DGX Spark hardware, featuring an authenticated FastAPI gateway, React 19 chat UI, and operational monitor. Supports multiple inference backends with OpenAI-compatible APIs, session management, streaming chat, document attachments, and production deployment via Cloudflare Tunnel and systemd."
+    detailedDescription: "Deployed and served multiple LLMs locally using vLLM, TensorRT-LLM, and Triton Inference Server on NVIDIA GPU hardware, then built an internal API gateway so other projects could consume local inference directly, keeping proprietary prompts and data off public APIs. Includes an authenticated FastAPI gateway, React chat UI, session management, streaming, and operational monitoring."
   },
   {
     id: 1,
@@ -465,8 +477,8 @@ export const education = [
 ];
 
 export const projectCategories = [
-  { id: "all", name: "All Projects", count: 21, description: "Complete portfolio", icon: "◈" },
-  { id: "agentic-ai", name: "Agentic AI", count: 4, description: "Multi-agent systems, MCP tools, LLM orchestration", icon: "🤖" },
+  { id: "all", name: "All Projects", count: 22, description: "Complete portfolio", icon: "◈" },
+  { id: "agentic-ai", name: "Agentic AI", count: 5, description: "MCP tools, multi-agent systems, LLM orchestration", icon: "🤖" },
   { id: "systems-design", name: "Systems Design", count: 9, description: "Distributed architecture, adapters, gateways", icon: "⬡" },
   { id: "generative-ai", name: "Generative AI", count: 4, description: "RAG, transformers, generative models", icon: "✦" },
   { id: "cloud-mlops", name: "Cloud & MLOps", count: 7, description: "AWS, Docker, inference pipelines", icon: "☁" },
@@ -476,16 +488,16 @@ export const projectCategories = [
   { id: "analytics-bi", name: "Analytics & BI", count: 3, description: "Dashboards, forecasting, BI", icon: "▣" }
 ];
 
-export const featuredProjectIds = [19, 20, 21, 22];
+export const featuredProjectIds = [23, 21, 22, 19];
 
 export const heroContent = {
-  role: "AI Engineer · Tech Mahindra MakersLab · Dallas",
-  headline: "I build agentic AI systems.",
+  role: "Agentic AI Engineer · Tech Mahindra · MakersLab · Dallas",
+  headline: "I build AI agents that ship to production.",
   currentWork: [
+    { label: "AI Gateway", description: "Local inference/MLOps", projectId: 22 },
+    { label: "Context Hub", description: "Knowledge-graph retrieval", projectId: 21 },
     { label: "Refill Bot", description: "MCP orchestration of agents", projectId: 19 },
-    { label: "Engineering Adapter", description: "Research solutions for token consumption", projectId: 20 },
-    { label: "Context Hub", description: "Knowledge-graph context for coding agents", projectId: 21 },
-    { label: "AI Gateway", description: "Production MLOps & model serving", projectId: 22 },
+    { label: "Engineering Adapter", description: "Token/cost optimization", projectId: 20 },
   ],
 };
 
@@ -493,7 +505,7 @@ export const skillDomains = [
   {
     id: "agentic-ai",
     title: "Agentic AI & LLMs",
-    description: "Production multi-agent systems with tool use, guardrails, and observability.",
+    description: "Multi-agent systems, MCP tools, and LLM orchestration.",
     size: "large" as const,
     skills: [
       { name: "Agent Orchestration", proficiency: 92, level: "Expert" as const, context: "Multi-stage refill bot with deterministic payment guardrails" },
@@ -506,7 +518,7 @@ export const skillDomains = [
   {
     id: "system-design",
     title: "System Design",
-    description: "Vendor-agnostic platforms, gateways, and distributed service architecture.",
+    description: "API gateways, adapters, and distributed services.",
     size: "medium" as const,
     skills: [
       { name: "API Gateway Design", proficiency: 90, level: "Expert" as const, context: "OpenAI-compatible proxy with auth & rate limiting" },
@@ -518,7 +530,7 @@ export const skillDomains = [
   {
     id: "ml-ai",
     title: "Machine Learning",
-    description: "Deep learning, transformers, and production model deployment.",
+    description: "Deep learning, transformers, and model deployment.",
     size: "medium" as const,
     skills: [
       { name: "PyTorch", proficiency: 88, level: "Advanced" as const, context: "Transformers, GNNs, adversarial ML research" },
@@ -530,7 +542,7 @@ export const skillDomains = [
   {
     id: "backend",
     title: "Backend & APIs",
-    description: "High-throughput Python backends and full-stack integration.",
+    description: "FastAPI backends and full-stack integration.",
     size: "small" as const,
     skills: [
       { name: "Python / FastAPI", proficiency: 92, level: "Expert" as const, context: "Primary stack across all MakersLab projects" },
@@ -542,7 +554,7 @@ export const skillDomains = [
   {
     id: "cloud-mlops",
     title: "Cloud & MLOps",
-    description: "Containerized deployment, observability, and infrastructure.",
+    description: "Docker, observability, and cloud infrastructure.",
     size: "small" as const,
     skills: [
       { name: "Docker", proficiency: 88, level: "Advanced" as const, context: "Multi-service Compose stacks" },
@@ -554,7 +566,7 @@ export const skillDomains = [
   {
     id: "data-engineering",
     title: "Data Engineering",
-    description: "ETL pipelines, warehousing, and analytics infrastructure.",
+    description: "ETL pipelines, warehousing, and analytics.",
     size: "small" as const,
     skills: [
       { name: "SQL / Warehousing", proficiency: 85, level: "Advanced" as const, context: "MS SQL Server, Snowflake, 99% accuracy" },
