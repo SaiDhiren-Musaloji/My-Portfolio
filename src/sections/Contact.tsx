@@ -36,12 +36,14 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="page-section">
+    <section id="contact" className="page-section contact-section">
+      <div className="contact-section-bg" aria-hidden="true" />
       <div className="page-wrap contact-wrap">
         <SectionLabel
           index="04"
           title="Contact"
           description="Open to roles, collaborations, and hard problems."
+          light
         />
 
         <div className="contact-layout">

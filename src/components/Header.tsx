@@ -8,17 +8,32 @@ const NAV = [
   { id: 'contact', label: 'Contact' },
 ];
 
+/** Sections with dark / blueish backgrounds — light transparent pill. */
+const DARK_SECTION_IDS = ['hero', 'skills', 'contact'];
+
 const Header: React.FC = () => {
-  const [onHero, setOnHero] = useState(true);
+  const [onDark, setOnDark] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => {
-      setOnHero(window.scrollY < window.innerHeight * 0.6);
+    const update = () => {
+      const probeY = 48;
+      const overDark = DARK_SECTION_IDS.some((id) => {
+        const el = document.getElementById(id);
+        if (!el) return false;
+        const { top, bottom } = el.getBoundingClientRect();
+        return top <= probeY && bottom >= probeY;
+      });
+      setOnDark(overDark);
     };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    return () => {
+      window.removeEventListener('scroll', update);
+      window.removeEventListener('resize', update);
+    };
   }, []);
 
   const go = (id: string) => {
@@ -27,7 +42,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`site-header ${onHero ? 'on-hero' : ''}`}>
+    <header className={`site-header ${onDark ? 'on-hero' : ''}`}>
       <div className="site-header-pill">
         <button type="button" className="site-brand" onClick={() => go('hero')}>
           SD
